@@ -1,0 +1,29 @@
+id: exp_001_codebook
+description: >
+  Baseline run of the codebook prompt on the screening corpus. One pass
+  with Haiku 4.5 at temperature 0. Produces the first set of LLM
+  screening decisions, to feed the solve-or-guess analysis against the
+  three human reviewers.
+
+model: claude-haiku-4-5
+temperature: 0.0
+max_tokens: 1024
+
+conditions:
+  - name: baseline
+    prompt: prompts/screen_v1_codebook.txt
+
+inputs:
+  manifest: data/inputs/screening_corpus.csv
+  # csv columns: case_id, title, abstract
+
+n_runs: 1
+seed: 20260604
+
+evaluation:
+  human_labels: data/derived/human_reviewer_labels_merged.csv
+  rubric: prompts/screen_v1_codebook.txt
+  estimands: [pairwise_kappa, solving_probability_ratio]
+
+output:
+  runs_dir: runs/exp_001_codebook/

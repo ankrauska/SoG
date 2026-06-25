@@ -1,0 +1,28 @@
+{
+  "experiment_id": "exp_001_codebook",
+  "condition": "baseline",
+  "prompt_id": "screen_v1_codebook",
+  "prompt_sha": "c1572450",
+  "case_id": "case_069",
+  "run_index": 1,
+  "model": "claude-haiku-4-5",
+  "temperature": 0.0,
+  "seed": 20260604,
+  "timestamp": "2026-06-24T10:15:47Z",
+  "title": "Impact of a Community-Based Positive Deviance Hearth Intervention on Feeding Practices Among Malnourished Children Aged 6\u201359 Months in Bomet County, Kenya",
+  "abstract": "Child undernutrition remains a major public health challenge in Kenya. Suboptimal feeding practices contribute significantly to persistent underweight and stunting. This study evaluated the effect of a community-based Positive Deviance Hearth (PDH) intervention on feeding practices among children aged 6\u201359 months in Sub County within a County of study. The study adopted a two-group pretest-posttest randomized experimental study design conducted for six months period, among 84 caregiver-child pairs in intervention and control groups. A multi-stage sampling was employed to identify study settings and participants. Structured and pretested questionnaires, 24-hour food recall questionnaires and meal diversity questionnaires were used for data collection at pre-intervention and post-intervention periods. Data was analyzed using R software v.4.5.2. The differences between intervention and control groups at baseline and endline were assessed using difference-in-difference analysis, relevantly summarized using adjusted DID estimates, 95% confidence intervals and p-values, with p<0.05 considered significant. The PDH intervention significantly improved feeding practices among children 6\u201359 months. Meal frequency increased for 9\u201323 months (DiD = +1.4; 95% CI: 1.2\u20131.7; p = 0.034) and \u226524 months (DiD = +1.2; 95% CI: 1.1\u20131.5; p = 0.017), and dietary diversity rose (DiD = +1.3; 95% CI: 1.1\u20131.9; p < 0.001). Nutrient-dense food consumption improved, including legumes (DiD = +32.6%; p < 0.001) and animal-source foods (DiD = +35.4%; p < 0.001). Energy and protein intake increased across all age groups (p < 0.05), and micronutrients\u2014iron, vitamin A, vitamin C\u2014also rose significantly (p < 0.05). The PDH intervention substantially improved caregiver feeding practices, increased dietary diversity, and enhanced macro- and micronutrient intake, demonstrating its effectiveness as a scalable, community-driven strategy for sustainably improving child nutrition in high-burden settings.Competing Interest StatementThe authors have declared no competing interest.Funding StatementThis study did not receive any fundingAuthor DeclarationsI confirm all relevant ethical guidelines have been followed, and any necessary IRB and/or ethics committee approvals have been obtained.YesThe details of the IRB/oversight body that provided approval or exemption for the research described are given below:Ethical approval was obtained from Institutional Scientific Ethics Review Committee (ISERCI) of University of Eastern Africa Baraton: UEAB/ISERCI/07/08/2024.I confirm that all necessary patient/participant consent has been obtained and the appropriate institutional forms have been archived, and that any patient/participant/sample identifiers included were not known to anyone (e.g., hospital staff, patients or participants themselves) outside the research group so cannot be used to identify individuals.YesI understand that all clinical trials and any other prospective interventional studies must be registered with an ICMJE-approved registry, such as ClinicalTrials.gov. I confirm that any such study reported in the manuscript has been registered and the trial registration ID is provided (note: if posting a prospective study registered retrospectively, please provide a statement in the trial ID field explaining why the study was not registered in advance).YesI have followed all appropriate research reporting guidelines, such as any relevant EQUATOR Network research reporting checklist(s) and other pertinent material, if applicable.YesAll data produced in the present study are available upon reasonable request to the authors",
+  "output": {
+    "analyzing_data": "Yes",
+    "patient_level_health_outcomes": "Yes",
+    "evidence_of_randomization": "The study adopted a two-group pretest-posttest randomized experimental study design conducted for six months period, among 84 caregiver-child pairs in intervention and control groups.",
+    "intervention_randomized": "Unclear",
+    "reasoning": "The study analyzes patient-level health outcomes (feeding practices, dietary diversity, nutrient intake, and micronutrient status among children aged 6\u201359 months). The abstract explicitly states a \"randomized experimental study design\" with two groups (intervention and control), suggesting individual randomization. However, the abstract does not provide explicit allocation language describing how individual participants were randomly assigned to groups (e.g., \"randomly assigned,\" \"randomized to,\" or specific randomization method). While the design is described as \"randomized,\" the lack of specific allocation language creates ambiguity about whether randomization was truly at the individual level or potentially at another level. This requires human review to confirm the randomization method from the full text.",
+    "consort_flag": "Human Review"
+  },
+  "usage": {
+    "input_tokens": 3833,
+    "output_tokens": 325
+  },
+  "stop_reason": "tool_use",
+  "elapsed_sec": 3.39
+}

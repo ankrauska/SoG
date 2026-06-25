@@ -1,0 +1,28 @@
+{
+  "experiment_id": "exp_001_codebook",
+  "condition": "baseline",
+  "prompt_id": "screen_v1_codebook",
+  "prompt_sha": "c1572450",
+  "case_id": "case_033",
+  "run_index": 1,
+  "model": "claude-haiku-4-5",
+  "temperature": 0.0,
+  "seed": 20260604,
+  "timestamp": "2026-06-24T10:13:27Z",
+  "title": "Lactoferrin and lysozyme for Kenyan children presenting with wasting and diarrhea: A 2 x 2 factorial randomized controlled trial",
+  "abstract": "Introduction Lactoferrin and lysozyme are milk derived proteins with antimicrobial and anti-inflammatory properties. We tested if these supplements improved time-to-nutritional-recovery and reduced the incidence of new moderate or severe diarrhea (MSD) among children presenting to hospital with wasting and diarrhea.Methods Medically-stable children aged 6-24 months with diarrhea and wasting were randomized to a 16-week course of lactoferrin, lysozyme, a combination of both, or placebo. Time-to-nutritional-recovery (mid-upper arm circumference \u2265 12.5cm) and incidence of new onset MSD were the primary outcomes observed over 6-months follow-up. Subgroup analyses included efficacy by wasting status (severe vs. moderate), stunting, age, inpatient/outpatient, and adherence.Results Among the 600 children randomized, 531 (88.5%) nutritionally recovered within 16-weeks; 63% among severely wasted children and 95% in children with moderate wasting. The wasting recovery rate in the combination arm was non significantly higher (HR: 1.23, 95%CI: 0.97, 1.57; p=0.083) than the placebo group. Children randomized to lactoferrin alone and lysozyme alone had nutritional recovery rates similar to placebo (HR: 0.94, 95% CI 0.74, 1.20; p=0.607 and HR: 0.91, 95% CI: 0.71, 1.17; p=0.462, respectively). Among severely wasted children, the combination arm had a higher recovery rate than placebo (HR: 2.76, 95% CI 1.49, 5.09; p=0.001), but not the individual lactoferrin (HR: 1.29, 95% CI 0.69, 2.41; p=0.427) and lysozyme (HR: 0.80, 95% CI: 0.40, 1.60; p=0.530) arms. Children randomized to intervention arms had comparable incidence of MSD (82.3-97.0 per 100 child-years) to the placebo arm (75.3 per 100 child-years).Conclusions The combination of lactoferrin and lysozyme for 16 weeks modestly improved nutritional recovery time particularly among severely wasted children. If confirmed, there may be a role for enteric-targeted therapeutics as adjuvants to severe wasting management. Additional strategies are needed for the post-acute diarrhea recovery period.Competing Interest StatementThe authors have declared no competing interest.Clinical TrialNCT05519254Clinical Protocols https://bmjopen.bmj.com/content/bmjopen/14/8/e079448.full.pdf Funding StatementThe National Institute of Health R01HD103642 (PI Patricia Pavlinac)Author DeclarationsI confirm all relevant ethical guidelines have been followed, and any necessary IRB and/or ethics committee approvals have been obtained.YesThe details of the IRB/oversight body that provided approval or exemption for the research described are given below:The clinical trial which was approved by the University of Washington Institutional Review Board STUDY00011759 and Kenya Medical Research Institutes Scientific and Ethical Review Unit SERU 4274I confirm that all necessary patient/participant consent has been obtained and the appropriate institutional forms have been archived, and that any patient/participant/sample identifiers included were not known to anyone (e.g., hospital staff, patients or participants themselves) outside the research group so cannot be used to identify individuals.YesI understand that all clinical trials and any other prospective interventional studies must be registered with an ICMJE-approved registry, such as ClinicalTrials.gov. I confirm that any such study reported in the manuscript has been registered and the trial registration ID is provided (note: if posting a prospective study registered retrospectively, please provide a statement in the trial ID field explaining why the study was not registered in advance).YesI have followed all appropriate research reporting guidelines, such as any relevant EQUATOR Network research reporting checklist(s) and other pertinent material, if applicable.YesAll data produced in the present study are available upon reasonable request to the authors",
+  "output": {
+    "analyzing_data": "Yes",
+    "patient_level_health_outcomes": "Yes",
+    "evidence_of_randomization": "Medically-stable children aged 6-24 months with diarrhea and wasting were randomized to a 16-week course of lactoferrin, lysozyme, a combination of both, or placebo. Among the 600 children randomized, 531 (88.5%) nutritionally recovered within 16-weeks.",
+    "intervention_randomized": "Yes",
+    "reasoning": "This manuscript analyzes empirical data from 600 individual children who were randomized to one of four intervention arms (lactoferrin, lysozyme, combination, or placebo) in a 2\u00d72 factorial design. The abstract explicitly states children were \"randomized\" and reports patient-level health outcomes including time-to-nutritional-recovery and incidence of moderate or severe diarrhea, with detailed results stratified by subgroups. The randomization was at the individual level, not cluster-level. This is a completed individually randomized controlled trial evaluating patient-level clinical outcomes, meeting all criteria for CONSORT compliance review eligibility.",
+    "consort_flag": "Include"
+  },
+  "usage": {
+    "input_tokens": 3983,
+    "output_tokens": 349
+  },
+  "stop_reason": "tool_use",
+  "elapsed_sec": 4.63
+}

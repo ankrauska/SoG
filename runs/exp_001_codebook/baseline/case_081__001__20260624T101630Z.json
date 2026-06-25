@@ -1,0 +1,28 @@
+{
+  "experiment_id": "exp_001_codebook",
+  "condition": "baseline",
+  "prompt_id": "screen_v1_codebook",
+  "prompt_sha": "c1572450",
+  "case_id": "case_081",
+  "run_index": 1,
+  "model": "claude-haiku-4-5",
+  "temperature": 0.0,
+  "seed": 20260604,
+  "timestamp": "2026-06-24T10:16:30Z",
+  "title": "Validation of 3D-DXA\u2013Derived Proximal Femur Measurements Against QCT Across International Clinical Cohorts",
+  "abstract": "Three-dimensional dual-energy X-ray absorptiometry (3D-DXA) reconstructs proximal femur models from standard scans to estimate cortical and trabecular bone parameters. The aim of this study was to evaluate 3D-DXA against quantitative computed tomography (QCT) across independent international cohorts. The study included 537 subjects from four cohorts: an adult population from Spain, a postmenopausal female population from the United States, an osteoarthrosis population and a young population, both from Japan. Subjects underwent both 3D-DXA and QCT imaging. Accuracy was assessed using linear regression and Bland-Altman analysis to evaluate systematic and random errors. 3D-DXA parameters strongly correlated with QCT across all datasets, with correlation coefficients between 0.82 and 0.97. Random errors were consistent across cohorts and ranged between 16.55 and 19.91 mg/cm3 for integral volumetric bone mineral density (vBMD), between 13.52 and 18.47 mg/cm3 for trabecular vBMD, and between 9.13 and 11.37 mg/cm2 for cortical surface bone mineral density (sBMD). Systematic errors ranged between -14.84 and 4.50 mg/cm3 for integral vBMD, between -8.31 and 14.41 mg/cm3 for trabecular vBMD, and between -5.58 and 3.21 mg/cm2 for cortical sBMD. The variations in systematic errors were likely attributable to differences in QCT acquisition protocols. Overall, these results demonstrate consistent agreement between 3D-DXA and QCT across sex, age, ethnicity, geographic regions, and clinical profiles. Taken together, these findings support the use of 3D-DXA as an accurate, non-invasive, and clinically accessible technology for advanced assessment of the cortical and trabecular compartments of the proximal femur.Competing Interest StatementLudovic Humbert is an employee and shareholder of 3D-Shaper Medical. Marta I. Bracco is an employee of 3D-Shaper Medical. All the other authors have declared no competing interest. Funding StatementThis study did not receive any fundingAuthor DeclarationsI confirm all relevant ethical guidelines have been followed, and any necessary IRB and/or ethics committee approvals have been obtained.YesThe details of the IRB/oversight body that provided approval or exemption for the research described are given below:The study protocol was reviewed and approved by the Institutional Review Boards (IRB) or Clinical Research Ethics Committees (CEIm) of all participating hospitals: Spanish centers: Hospital de la Santa Creu i Sant Pau and CETIR ASCIRES, Barcelona, Spain; USA centers: Bangor, ME; Minneapolis, MN; New York, NY; and Pittsburgh, PA; Japan center: Kawasaki Medical School. The study was conducted in accordance with the ethical standards of the Declaration of Helsinki. All participants provided written informed consent prior to inclusion in the study. I confirm that all necessary patient/participant consent has been obtained and the appropriate institutional forms have been archived, and that any patient/participant/sample identifiers included were not known to anyone (e.g., hospital staff, patients or participants themselves) outside the research group so cannot be used to identify individuals.YesI understand that all clinical trials and any other prospective interventional studies must be registered with an ICMJE-approved registry, such as ClinicalTrials.gov. I confirm that any such study reported in the manuscript has been registered and the trial registration ID is provided (note: if posting a prospective study registered retrospectively, please provide a statement in the trial ID field explaining why the study was not registered in advance).YesI have followed all appropriate research reporting guidelines, such as any relevant EQUATOR Network research reporting checklist(s) and other pertinent material, if applicable.YesAll validation results produced in the present study are available upon reasonable request to the authors",
+  "output": {
+    "analyzing_data": "Yes",
+    "patient_level_health_outcomes": "No",
+    "evidence_of_randomization": "No allocation language found",
+    "intervention_randomized": "No",
+    "reasoning": "The study analyzes empirical data from 537 subjects across four international cohorts, comparing 3D-DXA imaging against QCT imaging. However, this is a validation/diagnostic accuracy study, not a clinical trial evaluating health outcomes. The subjects underwent both imaging modalities to assess agreement and accuracy of measurements\u2014there is no intervention being tested, no randomization of participants to treatment groups, and no evaluation of patient health or clinical outcomes. This is a methodological/technical validation study, not an individually randomised controlled trial. It does not meet CONSORT eligibility criteria.",
+    "consort_flag": "Exclude"
+  },
+  "usage": {
+    "input_tokens": 3920,
+    "output_tokens": 262
+  },
+  "stop_reason": "tool_use",
+  "elapsed_sec": 3.38
+}

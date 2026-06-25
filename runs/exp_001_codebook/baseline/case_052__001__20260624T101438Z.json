@@ -1,0 +1,28 @@
+{
+  "experiment_id": "exp_001_codebook",
+  "condition": "baseline",
+  "prompt_id": "screen_v1_codebook",
+  "prompt_sha": "c1572450",
+  "case_id": "case_052",
+  "run_index": 1,
+  "model": "claude-haiku-4-5",
+  "temperature": 0.0,
+  "seed": 20260604,
+  "timestamp": "2026-06-24T10:14:38Z",
+  "title": "Repolarisation Speed May Vary with Characteristic Frequency in Human Spiral Ganglion Cells: Preliminary Observation from Electrically Evoked Compound Action Potentials",
+  "abstract": "The human auditory system decomposes complex sounds into distinct components via a collection of processing steps. Knowing whether Spiral Ganglion Cells (SGCs) play an active role in the decoding of complex sounds can facilitate the development of Cochlear Implant (Cl) coding strategies and clinical assessment tools. Early animal studies reported SGCs being similar across different characteristic frequencies (CFs). In this study, human electrically evoked compound action potentials (eCAPs) were analysed to probe the relationship between the reciprocal of CF and the duration of the eCAP. A significant relationship could indicate that SGCs may not simply be passive cables. eCAP datasets from 6 published studies (175 Cl users, 1243 recordings) were analysed and their peaks were automatically labelled. The nlp2 latency was derived for each recording as a proxy of the action potential duration. The CF of each recording was estimated by mapping the average insertion angle of the electrode to the human SGC map. A weak but statistically significant relationship was observed between the n1p2 latency and the reciprocal of CF (random-effects model with random intercepts for subject, r = 0.09, p = 0.024, n= 450) supporting the hypothesis that lower CF is associated with slower repolarisation (longer n1p2 latency) in human spiral ganglion cells.Competing Interest StatementThe authors have declared no competing interest.Funding StatementJ.L. was supported by a joint scholarship provided by the Ministry of Education, Taiwan and Cambridge Commonwealth, European, and International Trust. C.G. was supported by MRC Impact Acceleration Award No. G116517. DV was funded by Medical Research Council MR/S002537/1, NIHR Cambridge Biomedical Research Centre NIHR203312, and NIHR Programme Grant for Applied Research NIHR201608.Author DeclarationsI confirm all relevant ethical guidelines have been followed, and any necessary IRB and/or ethics committee approvals have been obtained.YesThe details of the IRB/oversight body that provided approval or exemption for the research described are given below:This manuscript analysed shared de-identified data obtained upon request from several published studies. Each study obtained appropriate ethic approval at the time of experiment.I confirm that all necessary patient/participant consent has been obtained and the appropriate institutional forms have been archived, and that any patient/participant/sample identifiers included were not known to anyone (e.g., hospital staff, patients or participants themselves) outside the research group so cannot be used to identify individuals.YesI understand that all clinical trials and any other prospective interventional studies must be registered with an ICMJE-approved registry, such as ClinicalTrials.gov. I confirm that any such study reported in the manuscript has been registered and the trial registration ID is provided (note: if posting a prospective study registered retrospectively, please provide a statement in the trial ID field explaining why the study was not registered in advance).YesI have followed all appropriate research reporting guidelines, such as any relevant EQUATOR Network research reporting checklist(s) and other pertinent material, if applicable.YesAll data produced in the present study are available upon reasonable request to the authors",
+  "output": {
+    "analyzing_data": "Yes",
+    "patient_level_health_outcomes": "No",
+    "evidence_of_randomization": "No allocation language found",
+    "intervention_randomized": "No",
+    "reasoning": "This manuscript analyzes empirical data from 175 CI users across 1243 recordings, examining the relationship between spiral ganglion cell repolarization speed and characteristic frequency using electrically evoked compound action potentials. However, this is a secondary analysis of existing datasets from published studies, not a clinical trial evaluating health outcomes. The study is a basic neuroscience investigation probing cellular properties of the auditory system rather than assessing the efficacy or safety of an intervention on patient health. No randomization language is present because this is an observational/analytical study of existing data, not a randomized controlled trial. The work does not fit CONSORT eligibility criteria as it lacks individual randomization of an intervention and does not evaluate patient-level clinical health outcomes.",
+    "consort_flag": "Exclude"
+  },
+  "usage": {
+    "input_tokens": 3703,
+    "output_tokens": 299
+  },
+  "stop_reason": "tool_use",
+  "elapsed_sec": 3.38
+}

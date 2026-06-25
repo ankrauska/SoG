@@ -1,0 +1,28 @@
+{
+  "experiment_id": "exp_001_codebook",
+  "condition": "baseline",
+  "prompt_id": "screen_v1_codebook",
+  "prompt_sha": "c1572450",
+  "case_id": "case_037",
+  "run_index": 1,
+  "model": "claude-haiku-4-5",
+  "temperature": 0.0,
+  "seed": 20260604,
+  "timestamp": "2026-06-24T10:13:41Z",
+  "title": "Artificial-Intelligence-Enabled Early Malnutrition Risk Assessment Tools for Elderly Trauma Patients in Intensive Care Units",
+  "abstract": "Background & Aims Accurate assessment of clinical malnutrition using anthropometric and functional indicators could improve the care of elderly trauma patients in intensive care units (ICUs). This study aimed to develop an AI-driven malnutrition assessment toolbox based on a minimal set of clinically feasible indicators.Methods Multiple machine learning models, including logistic regression, support vector machines, k-nearest neighbors, decision trees, random forests, XGBoost, and neural-network-based ensemble models, were developed using different indicator configurations from a clinically collected patient dataset. Models were trained using baseline and longitudinal measurements to predict malnutrition risk. SHAP analysis was used to interpret the importance of selected indicators.Results Baseline (Day 1) data alone did not provide a reliable prediction, whereas longitudinal measurements substantially improved performance. Models based on a minimal indicator set, including bilateral mid-upper arm circumference, calf circumference, and key static variables, outperformed models using the full indicator set. Tree-based methods consistently outperformed linear and distance-based models, with the three-time-point XGBoost achieving the best individual performance. Neural-network-based ensemble models further improved predictive stability. The best overall performance was achieved by the ensemble model using the minimal indicator set from Day 1 and Day 3. SHAP analysis confirmed the importance of the selected indicators.Conclusions This AI-driven toolbox provides an efficient and clinically feasible approach for early malnutrition assessment in elderly trauma patients in the ICU. Its strong performance with a minimal indicator set supports its potential for integration into clinical workflows and future digital twin systems for intelligent nutritional management.Competing Interest StatementThe authors have declared no competing interest.Funding StatementThis study was funded by NSF.Author DeclarationsI confirm all relevant ethical guidelines have been followed, and any necessary IRB and/or ethics committee approvals have been obtained.YesThe details of the IRB/oversight body that provided approval or exemption for the research described are given below:Ethics committee/IRB of Sichuan Peoples Hospital gave ethical approval for this workI confirm that all necessary patient/participant consent has been obtained and the appropriate institutional forms have been archived, and that any patient/participant/sample identifiers included were not known to anyone (e.g., hospital staff, patients or participants themselves) outside the research group so cannot be used to identify individuals.YesI understand that all clinical trials and any other prospective interventional studies must be registered with an ICMJE-approved registry, such as ClinicalTrials.gov. I confirm that any such study reported in the manuscript has been registered and the trial registration ID is provided (note: if posting a prospective study registered retrospectively, please provide a statement in the trial ID field explaining why the study was not registered in advance).YesI have followed all appropriate research reporting guidelines, such as any relevant EQUATOR Network research reporting checklist(s) and other pertinent material, if applicable.Yes",
+  "output": {
+    "analyzing_data": "Yes",
+    "patient_level_health_outcomes": "No",
+    "evidence_of_randomization": "No allocation language found",
+    "intervention_randomized": "No",
+    "reasoning": "This manuscript analyzes empirical data from a clinically collected patient dataset to develop and validate machine learning models for malnutrition risk prediction in elderly trauma patients. However, the study does not evaluate a clinical intervention's effect on patient health outcomes. Instead, it is a model development and validation study focused on building a predictive tool using retrospective patient data. There is no evidence of randomization or allocation of participants to different treatment groups. The abstract contains no language indicating that participants were randomly assigned to intervention or control groups. This is a diagnostic/prognostic model development study, not a randomized controlled trial evaluating the efficacy of an intervention on patient-level health outcomes. Therefore, it does not meet CONSORT eligibility criteria.",
+    "consort_flag": "Exclude"
+  },
+  "usage": {
+    "input_tokens": 3623,
+    "output_tokens": 291
+  },
+  "stop_reason": "tool_use",
+  "elapsed_sec": 4.02
+}

@@ -1,0 +1,28 @@
+{
+  "experiment_id": "exp_001_codebook",
+  "condition": "baseline",
+  "prompt_id": "screen_v1_codebook",
+  "prompt_sha": "c1572450",
+  "case_id": "case_021",
+  "run_index": 1,
+  "model": "claude-haiku-4-5",
+  "temperature": 0.0,
+  "seed": 20260604,
+  "timestamp": "2026-06-24T10:12:39Z",
+  "title": "Neural and behavioural measures from attention testing show no support for efficacy of neurofeedback treatment for adult ADHD",
+  "abstract": "Attention-deficit/hyperactivity disorder (ADHD) is associated with impairments in sustained attention and inhibitory control. Neurofeedback (NFB) is a widely used non-pharmacological treatment for ADHD and is generally well tolerated, but evidence for its efficacy remains mixed. Here we report results from secondary analysis of a randomized controlled trial of NFB training for adult ADHD, analysing behaviour and neural data from attention testing in both test-retest and treatment-vs-waiting list control group contrasts. We used electroencephalography (EEG) to investigate event-related cortical dynamics during the Test of Variables of Attention (TOVA), administered before and after NFB treatment. 44 adults with ADHD (NFB treatment, ADHD-T: n = 23; waitlist control, ADHD-W: n = 21) completed the TOVA before and after the NFB training period, while 128-channel EEG was recorded. Treatment-related change was examined through analyses based on behavioural TOVA performance, power spectral density, and event-related potentials, analysed with Bayesian linear mixed models. We found no meaningful evidence for NFB-specific improvements in TOVA behavioural performance over time, and no evidence that NFB modulated ERP or spectral indices relative to the ADHD-W group. Overall, we found no evidence that NFB treatment meaningfully benefited sustained attention or inhibitory control in adults with ADHD.Competing Interest StatementThe authors have declared no competing interest.Clinical TrialISRCTN13915109Funding StatementThis study was funded by the Finnish Funding Agency for Innovation (TEKES; now Business Finland), through the project \"Computer Enabled Neuroplasticity Treatment\" (CENT; project #440078, 2011-2013).Author DeclarationsI confirm all relevant ethical guidelines have been followed, and any necessary IRB and/or ethics committee approvals have been obtained.YesThe details of the IRB/oversight body that provided approval or exemption for the research described are given below:The Ethical Committee of the Hospital District of Helsinki and Uusimaa gave ethical approval for this work (28/03/2012, ref. 621/1999, Section 24). Written informed consent was obtained from all participants before entering the study, and the protocol followed the Declaration of Helsinki for the rights of the participants and the procedures of the study.I confirm that all necessary patient/participant consent has been obtained and the appropriate institutional forms have been archived, and that any patient/participant/sample identifiers included were not known to anyone (e.g., hospital staff, patients or participants themselves) outside the research group so cannot be used to identify individuals.YesI understand that all clinical trials and any other prospective interventional studies must be registered with an ICMJE-approved registry, such as ClinicalTrials.gov. I confirm that any such study reported in the manuscript has been registered and the trial registration ID is provided (note: if posting a prospective study registered retrospectively, please provide a statement in the trial ID field explaining why the study was not registered in advance).Yes I have followed all appropriate research reporting guidelines, such as any relevant EQUATOR Network research reporting checklist(s) and other pertinent material, if applicable.YesThe data and analysis code that support the findings of this study are available from the corresponding author upon reasonable request. Raw EEG data are not publicly available due to privacy restrictions related to clinical trial participants under the European General Data Protection Regulation (GDPR).",
+  "output": {
+    "analyzing_data": "Yes",
+    "patient_level_health_outcomes": "Yes",
+    "evidence_of_randomization": "The abstract states this is a \"randomized controlled trial of NFB training for adult ADHD\" with participants assigned to either \"NFB treatment, ADHD-T: n = 23; waitlist control, ADHD-W: n = 21\". The trial is registered as ISRCTN13915109.",
+    "intervention_randomized": "Yes",
+    "reasoning": "The manuscript analyzes empirical data from 44 adult participants with ADHD who were evaluated on patient-level health outcomes (sustained attention and inhibitory control measured via TOVA behavioral performance and neural measures via EEG). The abstract explicitly identifies this as a \"randomized controlled trial\" with individual participants assigned to either neurofeedback treatment or waitlist control groups. The study meets all criteria for CONSORT eligibility: it analyzes patient-level data, evaluates clinical outcomes (attention and inhibitory control in ADHD), and the intervention was individually randomized to treatment or control conditions.",
+    "consort_flag": "Include"
+  },
+  "usage": {
+    "input_tokens": 3767,
+    "output_tokens": 329
+  },
+  "stop_reason": "tool_use",
+  "elapsed_sec": 6.26
+}

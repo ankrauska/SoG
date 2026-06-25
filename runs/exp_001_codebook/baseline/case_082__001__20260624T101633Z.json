@@ -1,0 +1,28 @@
+{
+  "experiment_id": "exp_001_codebook",
+  "condition": "baseline",
+  "prompt_id": "screen_v1_codebook",
+  "prompt_sha": "c1572450",
+  "case_id": "case_082",
+  "run_index": 1,
+  "model": "claude-haiku-4-5",
+  "temperature": 0.0,
+  "seed": 20260604,
+  "timestamp": "2026-06-24T10:16:33Z",
+  "title": "Digital Therapeutic for Hwa-byung Based on Acceptance and Commitment Therapy: A Pilot Feasibility Trial",
+  "abstract": "Background Hwa-byung (HB) is a Korean culture-bound syndrome characterised by prolonged suppression of anger and somatic complaints. No evidence-based digital therapeutic (DTx) has been developed for HB. We evaluated the feasibility, user experience (UX), and preliminary clinical effect of an acceptance and commitment therapy (ACT)-based DTx application, Hwa-free, for HB.Methods Adults aged 19\u201380 years diagnosed with HB were enrolled in a four-week app-based intervention with assessment at baseline (Week 0), Week 2, Week 4, and Week 8 follow-up. The primary outcome was UX assessed via a 22-item survey at Week 4. Secondary outcomes included HB-related symptom and personality scales, depression, anxiety, anger expression, psychological flexibility, health-related quality of life, and heart rate variability.Results Of 45 screened, 30 were enrolled and 28 constituted the modified intention-to-treat population. Mean app use was 19.9 \u00b1 7.9 days (71.2% adherence over 28 days). Adverse events were infrequent and unrelated to the intervention. Positive response rates exceeded 80% for video content (items 2\u20134: 82.8\u201389.7%), HB self-assessment (86.2%), meditation therapy (86.2%), and in-app guidance (85.7%). Pre\u2013post improvements from baseline to Week 4 were observed in 11 of 18 clinical scales, including HB Symptom Scale (\u0394 = \u22129.8, Cohen\u2019s d = \u22120.92), Beck Depression Inventory-II (\u0394 = \u221213.3, d = \u22121.11), and state anger (\u0394 = \u22127.8, d = \u22120.96). The HB screening-positive rate declined from 100% at baseline to 55.6% at Week 8.Conclusions Hwa-free demonstrated adequate feasibility, acceptable UX, and preliminary evidence of clinically meaningful improvement in HB-related symptoms. Future randomised controlled trial is warranted.Trial registration CRIS, KCT0011105Competing Interest StatementThe authors have declared no competing interest.Clinical TrialKCT0011105Funding StatementThis work was supported by a grant from the Korea Health Technology R&D Project through the Korea Health Industry Development Institute (KHIDI) funded by the Ministry of Health & Welfare, Republic of Korea (grant number: RS-2023-KH139364).Author DeclarationsI confirm all relevant ethical guidelines have been followed, and any necessary IRB and/or ethics committee approvals have been obtained.YesThe details of the IRB/oversight body that provided approval or exemption for the research described are given below:The study was approved by the Institutional Review Board of Dong-eui University Korean Medicine Hospital (DH-2025-15; October 15, 2025).I confirm that all necessary patient/participant consent has been obtained and the appropriate institutional forms have been archived, and that any patient/participant/sample identifiers included were not known to anyone (e.g., hospital staff, patients or participants themselves) outside the research group so cannot be used to identify individuals.YesI understand that all clinical trials and any other prospective interventional studies must be registered with an ICMJE-approved registry, such as ClinicalTrials.gov. I confirm that any such study reported in the manuscript has been registered and the trial registration ID is provided (note: if posting a prospective study registered retrospectively, please provide a statement in the trial ID field explaining why the study was not registered in advance).YesI have followed all appropriate research reporting guidelines, such as any relevant EQUATOR Network research reporting checklist(s) and other pertinent material, if applicable.Yes",
+  "output": {
+    "analyzing_data": "Yes",
+    "patient_level_health_outcomes": "Yes",
+    "evidence_of_randomization": "No allocation language found",
+    "intervention_randomized": "No",
+    "reasoning": "The manuscript analyzes empirical data from 30 enrolled participants and evaluates patient-level health outcomes including HB symptom scales, depression, anxiety, and quality of life measures. However, the abstract contains no evidence of randomization. The study is explicitly described as a \"pilot feasibility trial\" with a single-arm design (all participants received the Hwa-free app intervention). The conclusion states \"Future randomised controlled trial is warranted,\" confirming that this pilot study itself was not randomized. Since the intervention was not individually randomized, this paper does not meet the inclusion criteria for CONSORT compliance review despite analyzing patient-level health outcomes.",
+    "consort_flag": "Exclude"
+  },
+  "usage": {
+    "input_tokens": 3837,
+    "output_tokens": 276
+  },
+  "stop_reason": "tool_use",
+  "elapsed_sec": 3.38
+}

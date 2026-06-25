@@ -1,0 +1,28 @@
+{
+  "experiment_id": "exp_001_codebook",
+  "condition": "baseline",
+  "prompt_id": "screen_v1_codebook",
+  "prompt_sha": "c1572450",
+  "case_id": "case_090",
+  "run_index": 1,
+  "model": "claude-haiku-4-5",
+  "temperature": 0.0,
+  "seed": 20260604,
+  "timestamp": "2026-06-24T10:17:08Z",
+  "title": "Diminished sex hormone levels influence the risk of skewed X chromosome inactivation",
+  "abstract": "Background X chromosome inactivation (XCI) is the mechanism which randomly silences one X chromosome to equalise gene expression between 46, XX females and 46, XY males. Though XCI is expected to result in a random pattern of mosaicism across tissues, some females display a significantly unbalanced ratio in immune cells, termed XCI-skew, in which \u226575% of cells have the same X inactivated. XCI-skew is associated with adverse health outcomes and its prevalence increases with age \u2013 particularly after midlife - yet the specific risk factors have yet to be identified. The menopausal transition, which is driven by profound shifts in sex hormone levels, has significant impact on chronic disease risk yet the molecular and cellular effects are incompletely understood. We hypothesised that the menopausal transition may impact XCI-skew.Methods Using XCI data measured in blood-derived DNA from 1,395 females from the TwinsUK population cohort, along with questionnaires, genetic data, and sex hormone measures, we carried out a cross-sectional study to assess the impact of the menopausal transition and sex hormones on XCI-skew.Results We demonstrate that early menopause (<45yrs) is associated with increased risk of XCI-skew. In subset analyses across those who had a surgically induced or natural menopause, we find the association restricted to those who underwent a surgical menopause. We next identify a low polygenic score (PGS) for testosterone levels is significantly associated with XCI-skew, which we replicate in an independent dataset (n=149), while a PGS for age at natural menopause is not associated. Finally, using longitudinal measures across two time points spanning \u223c18 years we show XCI-skew is a stable cellular phenotype that typically increases over time.Discussion These data represent the first environmental and genetic risk factors of XCI-skew, both of which implicate endogenous sex hormone levels, particularly testosterone. We propose XCI-skew may have clinical relevance in postmenopausal females.Competing Interest StatementThe authors have declared no competing interest.Funding StatementKSS ALR and CJS acknowledge funding from the Vivensa Foundation (AISRPG2305\\43). KSS acknowledges funding from the MRC (MR/R023131/1). ALR acknowledges funding from the British Society for Research on Ageing. MFO acknowledges funding from the Vivensa Foundation (JBGS22/7).Author DeclarationsI confirm all relevant ethical guidelines have been followed, and any necessary IRB and/or ethics committee approvals have been obtained.YesThe details of the IRB/oversight body that provided approval or exemption for the research described are given below:TwinsUK has received ethical approval associated with TwinsUK Biobank (19/NW/0187), TwinsUK (EC04/015) or Healthy Ageing Twin Study (HATS) (07/H0802/84) studies from NHS Research Ethics Service Committees London, Westminster. The King's College Denmark Hill Haematology (KCDHH) Biobank has received ethical approval from the NHS Research Ethics Committee North East, Newcastle & North Tyneside 1 (18/NE/0141).I confirm that all necessary patient/participant consent has been obtained and the appropriate institutional forms have been archived, and that any patient/participant/sample identifiers included were not known to anyone (e.g., hospital staff, patients or participants themselves) outside the research group so cannot be used to identify individuals.YesI understand that all clinical trials and any other prospective interventional studies must be registered with an ICMJE-approved registry, such as ClinicalTrials.gov. I confirm that any such study reported in the manuscript has been registered and the trial registration ID is provided (note: if posting a prospective study registered retrospectively, please provide a statement in the trial ID field explaining why the study was not registered in advance).YesI have followed all appropriate research reporting guidelines, such as any relevant EQUATOR Network research reporting checklist(s) and other pertinent material, if applicable.Yes",
+  "output": {
+    "analyzing_data": "Yes",
+    "patient_level_health_outcomes": "No",
+    "evidence_of_randomization": "No allocation language found",
+    "intervention_randomized": "No",
+    "reasoning": "The manuscript analyzes empirical data from 1,395 females in a cross-sectional study examining the relationship between sex hormone levels and X chromosome inactivation (XCI-skew). However, this is an observational study, not a randomised controlled trial. The study uses questionnaires, genetic data, and sex hormone measures to assess associations between menopausal transition/hormone levels and XCI-skew, but there is no evidence of random allocation of participants to intervention groups. No allocation language is present in the abstract. The outcomes measured (XCI-skew patterns) are biological/cellular phenotypes rather than clinical health outcomes in the traditional sense. This study does not meet CONSORT eligibility criteria as it is neither a randomised trial nor does it evaluate patient-level clinical health outcomes through intervention assignment.",
+    "consort_flag": "Exclude"
+  },
+  "usage": {
+    "input_tokens": 3903,
+    "output_tokens": 312
+  },
+  "stop_reason": "tool_use",
+  "elapsed_sec": 5.53
+}

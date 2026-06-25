@@ -1,0 +1,28 @@
+{
+  "experiment_id": "exp_001_codebook",
+  "condition": "baseline",
+  "prompt_id": "screen_v1_codebook",
+  "prompt_sha": "c1572450",
+  "case_id": "case_097",
+  "run_index": 1,
+  "model": "claude-haiku-4-5",
+  "temperature": 0.0,
+  "seed": 20260604,
+  "timestamp": "2026-06-24T10:17:31Z",
+  "title": "Decision Curve Analysis for Evaluating Machine Learning Models for Next-Day Transfer Out of ICU",
+  "abstract": "Timely identification of intensive care unit (ICU) patients likely to exit the unit can support anticipatory workflows such as chart review, eligibility screening, and patient outreach prior to transfer. Most ICU discharge prediction studies report discrimination and calibration, but these metrics do not quantify the decision consequences of acting on predictions. Using adult ICU admissions from MIMIC-IV, we represented each ICU stay as a sequence of daily clinical summaries and trained logistic regression, random forest, and XGBoost models to predict next day ICU transfer. Models achieved ROC AUC of 0.80\u20130.84 with differing calibration. We evaluated decision utility using decision curve analysis (DCA), where positive predictions trigger proactive review. Across thresholds, model guided strategies outperformed review-all, review-none, and a simple clinical rule. To translate net benefit into implementable operations, we modeled a clinical trial recruitment workflow with an 8 hour daily time constraint, incorporating chart review and consent effort. At a feasible operating threshold (0.23), the model flagged \u223c23 charts/day and yielded \u223c1.23 enrollments/day under conservative eligibility and consent assumptions. These results demonstrate that DCA provides a transparent framework for determining when ICU transfer predictions are worth using and how thresholds should be selected to align with real world workflow constraints.Data and Code Availability This research has been conducted using data from MIMIC-IV. Researchers can request access via PhysioNet. Implementation code is available upon request.Competing Interest StatementThe authors have declared no competing interest.Funding StatementThis study was supported the Huntsman Mental Health Foundation, the National Institute of Aging of the National Institutes of Health under Award Number L70AG096751, and the University of Utah's Digital Health Initiative (W.W.P.). National Heart, Lung, and Blood Institute of the National Institutes of Health under Award Number R01HL169521 and the Intermountain Fund under Project Number 20400306 (BWL).Author DeclarationsI confirm all relevant ethical guidelines have been followed, and any necessary IRB and/or ethics committee approvals have been obtained.YesThe details of the IRB/oversight body that provided approval or exemption for the research described are given below:The study used (or will use) ONLY openly available human data through MIMIC-IV that were originally located at PhysioNet.I confirm that all necessary patient/participant consent has been obtained and the appropriate institutional forms have been archived, and that any patient/participant/sample identifiers included were not known to anyone (e.g., hospital staff, patients or participants themselves) outside the research group so cannot be used to identify individuals.YesI understand that all clinical trials and any other prospective interventional studies must be registered with an ICMJE-approved registry, such as ClinicalTrials.gov. I confirm that any such study reported in the manuscript has been registered and the trial registration ID is provided (note: if posting a prospective study registered retrospectively, please provide a statement in the trial ID field explaining why the study was not registered in advance).YesI have followed all appropriate research reporting guidelines, such as any relevant EQUATOR Network research reporting checklist(s) and other pertinent material, if applicable.YesThis research has been conducted using data from MIMIC-IV. Researchers can request access via PhysioNet. https://physionet.org/content/mimiciv/3.1/",
+  "output": {
+    "analyzing_data": "Yes",
+    "patient_level_health_outcomes": "No",
+    "evidence_of_randomization": "No allocation language found",
+    "intervention_randomized": "No",
+    "reasoning": "The manuscript analyzes empirical data from MIMIC-IV, an observational ICU database, to develop and evaluate machine learning models for predicting next-day ICU transfer. While the study involves patient-level data, it is not evaluating a clinical intervention's effect on health outcomes; rather, it is a predictive modeling and decision curve analysis study assessing the utility of algorithmic predictions in a hypothetical clinical workflow. No randomization language is present in the abstract\u2014there is no mention of random assignment of patients to intervention or control groups. The study describes a retrospective analysis of existing data and a modeled clinical trial workflow, but does not report an actual randomized controlled trial. This is an observational/algorithmic study, not an individually randomized trial, and therefore does not meet CONSORT eligibility criteria.",
+    "consort_flag": "Exclude"
+  },
+  "usage": {
+    "input_tokens": 3743,
+    "output_tokens": 311
+  },
+  "stop_reason": "tool_use",
+  "elapsed_sec": 3.39
+}

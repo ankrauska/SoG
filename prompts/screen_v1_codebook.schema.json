@@ -1,0 +1,47 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "screen_v1_codebook",
+  "description": "Output schema for the screen_v1_codebook prompt. One object per abstract. Field order mirrors the six codebook questions. Pair with prompts/screen_v1_codebook.txt.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "analyzing_data",
+    "patient_level_health_outcomes",
+    "evidence_of_randomization",
+    "intervention_randomized",
+    "reasoning",
+    "consort_flag"
+  ],
+  "properties": {
+    "analyzing_data": {
+      "type": "string",
+      "enum": ["Yes", "No"],
+      "description": "Q1. Is this manuscript actively analyzing empirical data?"
+    },
+    "patient_level_health_outcomes": {
+      "type": "string",
+      "enum": ["Yes", "No", "Not Applicable"],
+      "description": "Q2. Does the analysis involve individual patient-level data evaluating health or clinical outcomes? Not Applicable when Q1 is No."
+    },
+    "evidence_of_randomization": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Q3. Copied or paraphrased allocation language from the abstract, or 'No allocation language found'."
+    },
+    "intervention_randomized": {
+      "type": "string",
+      "enum": ["Yes", "No", "Unclear"],
+      "description": "Q4. Was the intervention individually randomised, based on Q3 evidence?"
+    },
+    "reasoning": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Q5. One short paragraph synthesizing Q1-4 into a final CONSORT-eligibility judgment."
+    },
+    "consort_flag": {
+      "type": "string",
+      "enum": ["Include", "Exclude", "Human Review"],
+      "description": "Q6. Final screening decision."
+    }
+  }
+}

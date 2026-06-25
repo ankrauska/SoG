@@ -1,0 +1,28 @@
+{
+  "experiment_id": "exp_001_codebook",
+  "condition": "baseline",
+  "prompt_id": "screen_v1_codebook",
+  "prompt_sha": "c1572450",
+  "case_id": "case_015",
+  "run_index": 1,
+  "model": "claude-haiku-4-5",
+  "temperature": 0.0,
+  "seed": 20260604,
+  "timestamp": "2026-06-24T10:12:15Z",
+  "title": "Human papillomavirus vaccine acceptability in Cameroon: a systematic review and meta-analysis",
+  "abstract": "Background: Human papillomavirus (HPV) vaccination is a key strategy for cervical cancer elimination. In Cameroon, HPV vaccine was introduced into the expanded program on immunization in 2020. However, synthesized evidence on vaccine acceptability is needed to guide policy. This systematic review and meta-analysis aimed to estimate the pooled prevalence of HPV vaccine awareness, willingness to vaccinate, recommendation practices, and actual uptake in Cameroon, and to identify determinants of vaccine hesitancy. Methods: We searched PubMed, Scopus, Web of Science, Embase, Cochrane Library, and African Journals Online from studies to January 2025. Studies reporting willingness to vaccinate, awareness, recommendation, and uptake of HPV vaccine were included. Pooled prevalence estimates and odds ratios were calculated using random-effects models. Heterogeneity was assessed using the I2 statistic. The study was reported following PRISMA 2020 guidelines and registered in PROSPERO ID: CRD420261301213. Results: Thirty-three studies were included. The pooled prevalence of willingness to vaccinate was 68.1% (95% CI: 57.4-77.2; 12 studies; n = 4,993; I2 = 98%), while HPV vaccine awareness was 41.3% (95% CI: 28.7-55.1; 33 studies; n = 8,175 participants; I2 = 98%). Two-thirds of participants (67.7%; 95% CI: 50.7-81.0; 8 studies; n = 1,617) reported recommending the vaccine, but actual uptake was only 22.9% (95% CI: 6.9-54.5; 9 studies; n = 9,686). Willingness significantly declined from 74.2% before 2014 to 57.5% after 2021. Healthcare workers had the highest awareness (74.5%) and willingness (77.8%). Lack of HPV knowledge was associated with nearly three-fold higher hesitancy (OR: 2.58; 95% CI: 2.06-3.22). Conclusions: Despite moderate willingness, HPV vaccine awareness and uptake remain low in Cameroon, with marked disparities across regions and populations. Addressing knowledge gaps and strengthening context-specific vaccination strategies are needed to improve coverage.Competing Interest StatementThe authors have declared no competing interest.Funding StatementThis study did not receive any fundingAuthor DeclarationsI confirm all relevant ethical guidelines have been followed, and any necessary IRB and/or ethics committee approvals have been obtained.YesThe details of the IRB/oversight body that provided approval or exemption for the research described are given below:All data sources are available in the manuscript reference.I confirm that all necessary patient/participant consent has been obtained and the appropriate institutional forms have been archived, and that any patient/participant/sample identifiers included were not known to anyone (e.g., hospital staff, patients or participants themselves) outside the research group so cannot be used to identify individuals.YesI understand that all clinical trials and any other prospective interventional studies must be registered with an ICMJE-approved registry, such as ClinicalTrials.gov. I confirm that any such study reported in the manuscript has been registered and the trial registration ID is provided (note: if posting a prospective study registered retrospectively, please provide a statement in the trial ID field explaining why the study was not registered in advance).Yes I have followed all appropriate research reporting guidelines, such as any relevant EQUATOR Network research reporting checklist(s) and other pertinent material, if applicable.YesAll data generated or analyzed during this study are included in this published article and its supplementary data files.",
+  "output": {
+    "analyzing_data": "Yes",
+    "patient_level_health_outcomes": "No",
+    "evidence_of_randomization": "No allocation language found",
+    "intervention_randomized": "No",
+    "reasoning": "This manuscript is a systematic review and meta-analysis that analyzes aggregated data from 33 studies to estimate pooled prevalence of HPV vaccine awareness, willingness, recommendation, and uptake in Cameroon. While the authors are analyzing empirical data, this is a meta-analysis that synthesizes results from multiple studies rather than analyzing individual patient-level health outcomes. The abstract contains no evidence of randomization at the individual level\u2014it is a synthesis of existing literature. Meta-analyses are explicitly excluded from CONSORT eligibility criteria as they do not report on individually randomised controlled trials. Therefore, this paper does not meet the inclusion criteria.",
+    "consort_flag": "Exclude"
+  },
+  "usage": {
+    "input_tokens": 3827,
+    "output_tokens": 274
+  },
+  "stop_reason": "tool_use",
+  "elapsed_sec": 3.2
+}

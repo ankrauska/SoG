@@ -1,0 +1,28 @@
+{
+  "experiment_id": "exp_001_codebook",
+  "condition": "baseline",
+  "prompt_id": "screen_v1_codebook",
+  "prompt_sha": "c1572450",
+  "case_id": "case_096",
+  "run_index": 1,
+  "model": "claude-haiku-4-5",
+  "temperature": 0.0,
+  "seed": 20260604,
+  "timestamp": "2026-06-24T10:17:28Z",
+  "title": "A fully remote randomized controlled trial of an ultra-brief digital meditation intervention reduces internalizing symptoms",
+  "abstract": "Background Scalable, low-burden behavioral interventions are needed to address rising subclinical mental health symptoms. However, few randomized controlled trials have evaluated ultra-brief, remotely delivered, meditation using multimodal outcome assessment under real-world conditions.Methods We conducted a fully remote randomized controlled trial (ClinicalTrials.gov: NCT06014281) evaluating a focused-attention meditation intervention delivered via brief instructor training and independent daily practice. A total of 299 meditation-na\u00efve adults were randomized to immediate intervention or waitlist control in a delayed-intervention design. Participants practiced \u226510 minutes daily for 8 weeks within a 16-week study. Outcomes included validated self-report measures, web-based cognitive tasks, and wearable-derived physiological metrics.Results Across randomized and within-participant replication phases, the intervention was associated with significant reductions in anxiety and mind wandering, with effects remaining stable during 8-week follow-up. Improvements were greatest among participants with higher baseline symptom burden. Sleep disturbance improved selectively among individuals with poorer baseline sleep. Secondary outcomes, including rumination, perceived stress, social connectedness, and quality of life, also improved. Cognitive performance showed modest improvements primarily among lower-performing participants. Resting heart rate exhibited nominal reductions.Conclusions An ultra-brief, fully remote meditation intervention requiring 10 minutes per day was associated with sustained improvements in psychological functioning and smaller, baseline-dependent effects on cognition in a non-clinical population. These findings support digital delivery of low-dose meditation as a scalable preventive mental health strategy.Competing Interest StatementThe authors have declared no competing interest.Clinical TrialNCT06014281Funding StatementWe would like to thank the participants. We also thank the philanthropic funding from the IMIH (Chicago) and FFCA (San Francisco) to M.S.Author DeclarationsI confirm all relevant ethical guidelines have been followed, and any necessary IRB and/or ethics committee approvals have been obtained.YesThe details of the IRB/oversight body that provided approval or exemption for the research described are given below:This study was conducted according to the ethical guidelines outlined in the Declaration of Helsinki. Approval was obtained, and the study was monitored by the Stanford Institutional Review Board. All participants provided informed consent and were informed of the option to withdraw from the study at any time without penalty. There are no financial interests to report.I confirm that all necessary patient/participant consent has been obtained and the appropriate institutional forms have been archived, and that any patient/participant/sample identifiers included were not known to anyone (e.g., hospital staff, patients or participants themselves) outside the research group so cannot be used to identify individuals.YesI understand that all clinical trials and any other prospective interventional studies must be registered with an ICMJE-approved registry, such as ClinicalTrials.gov. I confirm that any such study reported in the manuscript has been registered and the trial registration ID is provided (note: if posting a prospective study registered retrospectively, please provide a statement in the trial ID field explaining why the study was not registered in advance).YesI have followed all appropriate research reporting guidelines, such as any relevant EQUATOR Network research reporting checklist(s) and other pertinent material, if applicable.YesDe-identified data is available upon reasonable request from the corresponding author. Code is available at the Brain Dynamics Lab GitHub page.",
+  "output": {
+    "analyzing_data": "Yes",
+    "patient_level_health_outcomes": "Yes",
+    "evidence_of_randomization": "A total of 299 meditation-na\u00efve adults were randomized to immediate intervention or waitlist control in a delayed-intervention design.",
+    "intervention_randomized": "Yes",
+    "reasoning": "The manuscript analyzes empirical data from a fully remote randomized controlled trial with 299 individual participants. The study evaluates patient-level health outcomes including anxiety, mind wandering, sleep disturbance, rumination, perceived stress, and quality of life using validated self-report measures and physiological metrics. The abstract explicitly states that participants were randomized to immediate intervention or waitlist control, indicating individual-level randomization. The trial is registered (NCT06014281) and meets the criteria for an individually randomized controlled trial evaluating health outcomes in a non-clinical population.",
+    "consort_flag": "Include"
+  },
+  "usage": {
+    "input_tokens": 3725,
+    "output_tokens": 283
+  },
+  "stop_reason": "tool_use",
+  "elapsed_sec": 3.12
+}

@@ -1,0 +1,28 @@
+{
+  "experiment_id": "exp_001_codebook",
+  "condition": "baseline",
+  "prompt_id": "screen_v1_codebook",
+  "prompt_sha": "c1572450",
+  "case_id": "case_043",
+  "run_index": 1,
+  "model": "claude-haiku-4-5",
+  "temperature": 0.0,
+  "seed": 20260604,
+  "timestamp": "2026-06-24T10:14:02Z",
+  "title": "Multicohort development and validation of a machine learning model to predict six-month functional traumatic brain injury outcomes in a large national registry",
+  "abstract": "Background Prognostication after moderate-to-severe traumatic brain injury (TBI) rarely captures long-term functional recovery, despite its importance to patients, families, and clinicians. Large trauma registries such as the Trauma Quality Improvement Program (TQIP) dataset contain detailed clinical data but lack systematic follow-up, limiting their ability to study longer-term functional outcomes.Methods We developed and externally validated a machine learning model to predict favorable six-month functional outcome (GOS \u201cMD\u201d/\u201dGR\u201d or GOSE \u22655) using harmonized data from two randomized clinical trials: CRASH (training) and ROC-TBI (validation). Five candidate classifiers (random forest [RF], linear discriminant analysis, k-nearest neighbors, na\u00efve Bayes, and support vector machine) were trained using seven shared clinical predictors. Models were evaluated using ROC-AUC, calibration metrics, and performance at the Youden optimal threshold and a high-sensitivity secondary threshold. The final model was applied to patients with moderate-to-severe TBI in the national TQIP registry (2017\u20132022) to estimate population-level recovery patterns.Results The RF model demonstrated the highest overall performance after recalibration, achieving strong discrimination (AUC internal and external, 0.887 and 0.784), good calibration, and high sensitivity (0.890) and negative predictive value (0.909). Applied to 63,289 patients from TQIP, the model estimated that 45% would achieve favorable six-month outcomes at the Youden optimal threshold and 57% at the high-sensitivity threshold, with predicted recovery aligning with established clinical correlates such as younger age, higher admission GCS, and lower rates of penetrating or brainstem injuries.Conclusion A machine learning model trained on high-quality trial data can generate clinically plausible estimates of long-term functional recovery when applied at scale to national trauma registries that lack systematic follow-up. This approach enables imputation of functional outcomes in datasets lacking follow-up, supports benchmarking and quality improvement across trauma systems, and provides a foundation for future models incorporating physiologic time-series, imaging, and biomarker data.Competing Interest StatementThe authors have declared no competing interest.Clinical TrialCRASH: SRCTN74459797; ROC: NCT00316004Funding StatementThis study did not receive any fundingAuthor DeclarationsI confirm all relevant ethical guidelines have been followed, and any necessary IRB and/or ethics committee approvals have been obtained.YesThe details of the IRB/oversight body that provided approval or exemption for the research described are given below:IRB of Johns Hopkins University gave ethical approval for this workI confirm that all necessary patient/participant consent has been obtained and the appropriate institutional forms have been archived, and that any patient/participant/sample identifiers included were not known to anyone (e.g., hospital staff, patients or participants themselves) outside the research group so cannot be used to identify individuals.YesI understand that all clinical trials and any other prospective interventional studies must be registered with an ICMJE-approved registry, such as ClinicalTrials.gov. I confirm that any such study reported in the manuscript has been registered and the trial registration ID is provided (note: if posting a prospective study registered retrospectively, please provide a statement in the trial ID field explaining why the study was not registered in advance).YesI have followed all appropriate research reporting guidelines, such as any relevant EQUATOR Network research reporting checklist(s) and other pertinent material, if applicable.YesAll data produced in the present study are available upon reasonable request to the authors",
+  "output": {
+    "analyzing_data": "Yes",
+    "patient_level_health_outcomes": "No",
+    "evidence_of_randomization": "No allocation language found",
+    "intervention_randomized": "No",
+    "reasoning": "This manuscript analyzes empirical data from two randomized clinical trials (CRASH and ROC-TBI) and a national registry (TQIP). However, the study itself is not a randomized controlled trial evaluating an intervention. Instead, it is a machine learning modeling study that develops and validates a predictive algorithm using data from existing trials and applies it to registry data. The authors are not randomizing participants to an intervention; rather, they are building a statistical/computational model to predict outcomes. This is a methodological/analytical study focused on model development and validation, not a clinical trial testing the efficacy of a therapeutic intervention. Therefore, while patient-level health outcome data are involved, the study does not involve individual randomization of participants to an intervention, making it ineligible for CONSORT compliance review.",
+    "consort_flag": "Exclude"
+  },
+  "usage": {
+    "input_tokens": 3788,
+    "output_tokens": 309
+  },
+  "stop_reason": "tool_use",
+  "elapsed_sec": 3.66
+}

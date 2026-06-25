@@ -1,0 +1,28 @@
+{
+  "experiment_id": "exp_001_codebook",
+  "condition": "baseline",
+  "prompt_id": "screen_v1_codebook",
+  "prompt_sha": "c1572450",
+  "case_id": "case_018",
+  "run_index": 1,
+  "model": "claude-haiku-4-5",
+  "temperature": 0.0,
+  "seed": 20260604,
+  "timestamp": "2026-06-24T10:12:25Z",
+  "title": "Human papillomavirus knowledge and associated factors in Cameroon: a systematic review and meta-analysis",
+  "abstract": "Background: Human papillomavirus (HPV) infection is a major public health concern in Cameroon, where cervical cancer remains the second leading cause of cancer-related morbidity and mortality among women. Despite the availability of effective preventive measures, their uptake remains suboptimal and is influenced by population-level knowledge and awareness. This study aimed to synthesize existing evidence on HPV-related knowledge and its associated factors in Cameroon. Methods: This review included studies assessing knowledge of HPV as a sexually transmitted infection (STI), its causal role in cervical cancer, and overall good HPV knowledge. A comprehensive and systematic search was conducted across PubMed, Scopus, Web of Science, Embase, the Cochrane Library, and local online databases. Study quality was appraised using the Joanna Briggs Institute critical appraisal tool. Pooled prevalence estimates were calculated using random-effects models (DerSimonian and Laird). Heterogeneity was assessed using the I2 statistic and explored through subgroup analyses. Results: A total of 32 studies involving 13,457 participants were included. The pooled prevalence of overall good HPV knowledge was 27.4% (95% CI: 7.6-63.2; 7 studies; n = 3,312), with considerable heterogeneity (I2 = 99.3%). Knowledge of HPV as a cause of cervical cancer was 27.9% (95% CI: 15.8-44.4; 26 studies; n = 8,688), while knowledge of HPV as an STI was 47.1% (95% CI: 31.4-63.5; 18 studies; n = 9,040). Healthcare workers demonstrated the highest levels of knowledge (80.2% for HPV as an STI; 78.7% for HPV as a cause of cervical cancer), whereas students (43.4% and 10.2%, respectively) and women from the general population (30.6% and 19.9%, respectively) showed substantially lower levels. Factors associated with poor knowledge included Christian affiliation (OR = 1.46; 95% CI: 0.08-26.06) and secondary level education (OR = 1.32; 95% CI: 0.66-2.63), although these associations were non-significant. Conclusions: This study reveals that, HPV-related knowledge in Cameroon remains low, particularly regarding the causal link between HPV and cervical cancer. These findings highlight the urgent need for targeted, context-specific educational interventions and strengthened public health strategies to improve awareness and uptake of HPV prevention measures.Competing Interest StatementThe authors have declared no competing interest.Funding StatementThis study did not receive any fundingAuthor DeclarationsI confirm all relevant ethical guidelines have been followed, and any necessary IRB and/or ethics committee approvals have been obtained.YesThe details of the IRB/oversight body that provided approval or exemption for the research described are given below:All data source are available in the manuscript reference.I confirm that all necessary patient/participant consent has been obtained and the appropriate institutional forms have been archived, and that any patient/participant/sample identifiers included were not known to anyone (e.g., hospital staff, patients or participants themselves) outside the research group so cannot be used to identify individuals.YesI understand that all clinical trials and any other prospective interventional studies must be registered with an ICMJE-approved registry, such as ClinicalTrials.gov. I confirm that any such study reported in the manuscript has been registered and the trial registration ID is provided (note: if posting a prospective study registered retrospectively, please provide a statement in the trial ID field explaining why the study was not registered in advance).Yes I have followed all appropriate research reporting guidelines, such as any relevant EQUATOR Network research reporting checklist(s) and other pertinent material, if applicable.YesAll data generated or analyzed during this study are included in this published article and its supplementary materials.",
+  "output": {
+    "analyzing_data": "Yes",
+    "patient_level_health_outcomes": "No",
+    "evidence_of_randomization": "No allocation language found",
+    "intervention_randomized": "No",
+    "reasoning": "This manuscript is a systematic review and meta-analysis that analyzes aggregated data from 32 studies to synthesize evidence on HPV-related knowledge and associated factors in Cameroon. While the authors are analyzing empirical data, this is not patient-level health outcome data; rather, it is a pooled analysis of prevalence estimates and knowledge assessments across multiple studies. Critically, this is a meta-analysis, not a primary randomised controlled trial. No allocation language is present because the manuscript does not report a randomised intervention study\u2014it synthesizes existing observational and cross-sectional studies. Meta-analyses are explicitly excluded from CONSORT eligibility criteria, as they aggregate data from other studies rather than evaluating individual participant randomisation and health outcomes in a primary trial.",
+    "consort_flag": "Exclude"
+  },
+  "usage": {
+    "input_tokens": 3880,
+    "output_tokens": 302
+  },
+  "stop_reason": "tool_use",
+  "elapsed_sec": 3.47
+}

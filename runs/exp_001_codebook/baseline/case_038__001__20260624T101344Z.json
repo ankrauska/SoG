@@ -1,0 +1,28 @@
+{
+  "experiment_id": "exp_001_codebook",
+  "condition": "baseline",
+  "prompt_id": "screen_v1_codebook",
+  "prompt_sha": "c1572450",
+  "case_id": "case_038",
+  "run_index": 1,
+  "model": "claude-haiku-4-5",
+  "temperature": 0.0,
+  "seed": 20260604,
+  "timestamp": "2026-06-24T10:13:44Z",
+  "title": "Assessment of Sleep Hygiene Practices and Its Effects on Sleep Quality Among Medical Students at UMST, Sudan",
+  "abstract": "Background Medical students face demanding academic schedules and elevated stress levels, predisposing them to poor sleep quality. Sleep hygiene \u2014 a set of behavioural and environmental practices aimed at optimising sleep \u2014 has been identified as a modifiable determinant of sleep quality, yet its role among medical students in Sudan remains unstudied.Objectives To assess current sleep hygiene practices among medical students at UMST and determine their association with sleep quality outcomes.Methods A facility-based cross-sectional study was conducted at UMST among 240 medical students from three academic batches (3rd, 4th, and 5th year), selected via stratified random sampling. Data were collected using two validated self-administered instruments: the Pittsburgh Sleep Quality Index (PSQI) and the Sleep Hygiene Index (SHI). Descriptive statistics, independent sample t-tests, one-way ANOVA, chi-square tests, Pearson correlation, and binary logistic regression were performed using SPSS version 23.Results Poor sleep quality (PSQI >5) was prevalent in 72.1% of participants (mean PSQI 7.25 \u00b1 2.66), and poor sleep hygiene (SHI >16) in 92.5% (mean SHI 27.1 \u00b1 7.9). SHI score (continuous) was the only significant independent predictor of sleep quality on logistic regression (OR = 1.13 per unit increase; 95% CI: 1.08\u20131.19; p < 0.001), equivalent to a 3.4-fold increase in odds per 10-unit rise in SHI score. Female sex was additionally identified as a significant predictor (OR = 1.88; 95% CI: 1.00\u20133.53; p = 0.049). A significant positive correlation was observed between PSQI and SHI scores (r = 0.359, p < 0.001).Conclusion Poor sleep hygiene is highly prevalent among UMST medical students and is the most significant modifiable predictor of poor sleep quality, with each unit increase in SHI score increasing the odds of poor sleep quality by 13%. These findings highlight a gap in sleep health education within Sudanese medical institutions and support the integration of targeted sleep hygiene interventions into the medical curriculum.Competing Interest StatementThe authors have declared no competing interest.Funding StatementThis study did not receive any fundingAuthor DeclarationsI confirm all relevant ethical guidelines have been followed, and any necessary IRB and/or ethics committee approvals have been obtained.YesThe details of the IRB/oversight body that provided approval or exemption for the research described are given below:Ethical approval was obtained from the Scientific Research Committee of the Faculty of Medicine, University of Medical Sciences and Technology (UMST) (approved 23 January 2024). Administrative permission was granted by the Dean of Student Affairs. All participants provided written informed consent, and data were anonymised and used for research purposes only.I confirm that all necessary patient/participant consent has been obtained and the appropriate institutional forms have been archived, and that any patient/participant/sample identifiers included were not known to anyone (e.g., hospital staff, patients or participants themselves) outside the research group so cannot be used to identify individuals.YesI understand that all clinical trials and any other prospective interventional studies must be registered with an ICMJE-approved registry, such as ClinicalTrials.gov. I confirm that any such study reported in the manuscript has been registered and the trial registration ID is provided (note: if posting a prospective study registered retrospectively, please provide a statement in the trial ID field explaining why the study was not registered in advance).YesI have followed all appropriate research reporting guidelines, such as any relevant EQUATOR Network research reporting checklist(s) and other pertinent material, if applicable.Yes",
+  "output": {
+    "analyzing_data": "Yes",
+    "patient_level_health_outcomes": "Yes",
+    "evidence_of_randomization": "No allocation language found",
+    "intervention_randomized": "No",
+    "reasoning": "The study analyzes empirical data from 240 medical students and evaluates patient-level health outcomes (sleep quality measured by PSQI). However, this is a facility-based cross-sectional observational study, not a randomised controlled trial. The abstract explicitly states \"A facility-based cross-sectional study was conducted\" and describes stratified random sampling for participant selection, but there is no evidence of random allocation of an intervention. The study observes the association between existing sleep hygiene practices and sleep quality outcomes without assigning participants to intervention or control groups. Therefore, it does not meet the CONSORT eligibility criteria for individually randomised controlled trials.",
+    "consort_flag": "Exclude"
+  },
+  "usage": {
+    "input_tokens": 3832,
+    "output_tokens": 277
+  },
+  "stop_reason": "tool_use",
+  "elapsed_sec": 3.07
+}

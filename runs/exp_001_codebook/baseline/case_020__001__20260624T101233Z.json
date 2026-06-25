@@ -1,0 +1,28 @@
+{
+  "experiment_id": "exp_001_codebook",
+  "condition": "baseline",
+  "prompt_id": "screen_v1_codebook",
+  "prompt_sha": "c1572450",
+  "case_id": "case_020",
+  "run_index": 1,
+  "model": "claude-haiku-4-5",
+  "temperature": 0.0,
+  "seed": 20260604,
+  "timestamp": "2026-06-24T10:12:33Z",
+  "title": "Clinically Meaningful Upper Limb Motor Recovery with Non-Immersive Virtual Reality (MindMotion GO) in Chronic Left MCA Stroke: A Randomized Controlled Trial",
+  "abstract": "Background: Functional recovery after chronic stroke remains limited, requiring intensive and engaging rehabilitation approaches. Non immersive virtual reality (NIVR) provides taskoriented, feedback driven training that may enhance motor recovery in this population. Objective: To evaluate the clinical effectiveness of a NIVR based intervention (MindMotion GO) on upper limb motor function in patients with chronic left middle cerebral artery ischaemic stroke (LMCA stroke). Methods: A single blind randomized controlled trial was conducted in 26 patients with chronic middle cerebral artery stroke. Five participants were lost to follow up, resulting in a final sample of 21 patients allocated to the nonimmersive virtual reality group (NIVR, n = 9) and conventional occupational therapy group (n = 12). Both groups completed an 8 week intervention consisting of two 30 minute sessions per week. The primary outcome was upper limb motor function assessed using the FuglMeyer Assessment Upper Extremity (FMAUE). Secondary outcomes included health related quality of life (SF12v2), emotional status (Hospital Anxiety and Depression Scale), and caregiver burden (Zarit Burden Interview). Statistical analyses were performed using the intention to treat principle with non parametric tests. Results: The NIVR group showed a clinically meaningful improvement in FMAUE (median 21), exceeding the minimal clinically important difference (MCID = 7.35), whereas the control group showed smaller gains (2.50) that did not reach clinical relevance. Both groups improved significantly over time; however, between group differences were not statistically significant (P > 0.05). No significant changes were observed in quality of life, mood, or caregiver burden. Conclusions: NIVR using MindMotion GO is a safe and feasible intervention that can induce clinically meaningful improvements in upper limb motor function in chronic stroke patients. These findings support the incorporation of accessible, taskoriented virtual rehabilitation strategies in longterm stroke care.Competing Interest StatementThe authors have declared no competing interest.Clinical TrialNCT07534124Funding StatementThis study did not receive any fundingAuthor DeclarationsI confirm all relevant ethical guidelines have been followed, and any necessary IRB and/or ethics committee approvals have been obtained.YesThe details of the IRB/oversight body that provided approval or exemption for the research described are given below:Comite Etico Investigacion Clinica GAE HCSC Area 7 granted approval for this work.I confirm that all necessary patient/participant consent has been obtained and the appropriate institutional forms have been archived, and that any patient/participant/sample identifiers included were not known to anyone (e.g., hospital staff, patients or participants themselves) outside the research group so cannot be used to identify individuals.YesI understand that all clinical trials and any other prospective interventional studies must be registered with an ICMJE-approved registry, such as ClinicalTrials.gov. I confirm that any such study reported in the manuscript has been registered and the trial registration ID is provided (note: if posting a prospective study registered retrospectively, please provide a statement in the trial ID field explaining why the study was not registered in advance).Yes I have followed all appropriate research reporting guidelines, such as any relevant EQUATOR Network research reporting checklist(s) and other pertinent material, if applicable.YesAll data produced in the present study are available upon reasonable request to the authors",
+  "output": {
+    "analyzing_data": "Yes",
+    "patient_level_health_outcomes": "Yes",
+    "evidence_of_randomization": "A single blind randomized controlled trial was conducted in 26 patients with chronic middle cerebral artery stroke. Participants were allocated to the non-immersive virtual reality group (NIVR, n = 9) and conventional occupational therapy group (n = 12).",
+    "intervention_randomized": "Yes",
+    "reasoning": "The manuscript analyzes empirical data from a completed trial with 21 patients (after attrition from 26). The analysis evaluates patient-level health outcomes, specifically upper limb motor function (primary outcome: FMA-UE) and secondary outcomes including quality of life, emotional status, and caregiver burden. The abstract explicitly states this is a \"randomized controlled trial\" with participants allocated to intervention (NIVR) and control (conventional occupational therapy) groups. The allocation language clearly indicates individual randomization of patients to treatment groups. All four criteria for CONSORT eligibility are met: data analysis, patient-level health outcomes, evidence of randomization, and individual-level randomization.",
+    "consort_flag": "Include"
+  },
+  "usage": {
+    "input_tokens": 3755,
+    "output_tokens": 341
+  },
+  "stop_reason": "tool_use",
+  "elapsed_sec": 3.68
+}

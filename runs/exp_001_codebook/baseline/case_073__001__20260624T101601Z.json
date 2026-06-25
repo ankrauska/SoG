@@ -1,0 +1,28 @@
+{
+  "experiment_id": "exp_001_codebook",
+  "condition": "baseline",
+  "prompt_id": "screen_v1_codebook",
+  "prompt_sha": "c1572450",
+  "case_id": "case_073",
+  "run_index": 1,
+  "model": "claude-haiku-4-5",
+  "temperature": 0.0,
+  "seed": 20260604,
+  "timestamp": "2026-06-24T10:16:01Z",
+  "title": "Assessing Parent-cocreated Sensory Reactivity Outcomes in Children with Neurodevelopmental Disorders Undergoing Bumetanide Treatment: A Multiple-Baseline Single-Case Experimental Design",
+  "abstract": "Progress in pharmacological treatment development for neurodevelopmental disorders is hindered by a misalignment between targeted mechanisms, outcome measures, and trial designs. This study was initiated as a post-trial access pathway for bumetanide and later expanded with treatment-naive participants. Within this framework, we implemented a parent-cocreated sensory outcome measure set (PROMset) in an unmasked, multiple-baseline single-case experimental design with randomized baseline periods of 2\u201312 weeks, followed by 6 months of bumetanide treatment (up to 1.5 mg twice daily). Participants (7\u201319 years) had atypical sensory reactivity and a diagnosis of ASD, ADHD, epilepsy, or TSC.The primary outcome was a PROMset comprising seven PROMIS item banks assessing anxiety, depressive symptoms, sleep disturbance, fatigue, sleep-related impairment, cognitive function, and peer relationships. Secondary outcomes included SSP, SRS-2, RBS-R, and ABC. Of 113 enrolled participants (mean age 13.2 [SD 2.7], 64% male), 102 completed the trial and 95 had analyzable PROMsets. At baseline, PROMset scores showed substantial impairment across domains (mean deviation \u22659.0 T-score points, p<.001) and correlated with sensory reactivity (SSP; r\u2265-0.40, p<.001). Individual-level analyses showed improvement in 24\u201341% of participants per PROM domain, most frequently in anxiety and depressive symptoms (41% and 38%; mean across-case Cohen\u2019s d\u2248-1). Overall, 83% improved on at least one domain. Group-level analyses showed improvement across all secondary outcomes (p<.001), with superiority over historic placebo for RBS-R and SSP.Integrating PROMsets with individualized trial designs can reveal clinically meaningful changes, supporting a more sensitive and patient-centered framework for treatment evaluation in heterogeneous populations.Competing Interest StatementLotte Haverman is part of the Dutch-Flemish PROMIS National Center. Benjamin Schalet is part of the Dutch-Flemish PROMIS National Center and a member of the PROMIS Health Organization Board of Directors. Lisa Geertjens, Gianina Cristian, Jennifer Ramautar, Klaus Linkenkaer-Hansen, Gert Jan van der Wilt, Jan Sprengers and Hilgo report no conflicts of interest.Clinical TrialEudraCT 2020 002196 35Clinical Protocols https://link.springer.com/article/10.1186/s12888-022-04033-8 Funding StatementThe study was funded by Dutch national research agenda (NWA-ORC, File-number NWA.1160.18.200)Author DeclarationsI confirm all relevant ethical guidelines have been followed, and any necessary IRB and/or ethics committee approvals have been obtained.YesThe details of the IRB/oversight body that provided approval or exemption for the research described are given below:Ethics committee/IRB of UMC Utrecht gave ethical approval for this workI confirm that all necessary patient/participant consent has been obtained and the appropriate institutional forms have been archived, and that any patient/participant/sample identifiers included were not known to anyone (e.g., hospital staff, patients or participants themselves) outside the research group so cannot be used to identify individuals.YesI understand that all clinical trials and any other prospective interventional studies must be registered with an ICMJE-approved registry, such as ClinicalTrials.gov. I confirm that any such study reported in the manuscript has been registered and the trial registration ID is provided (note: if posting a prospective study registered retrospectively, please provide a statement in the trial ID field explaining why the study was not registered in advance).YesI have followed all appropriate research reporting guidelines, such as any relevant EQUATOR Network research reporting checklist(s) and other pertinent material, if applicable.YesThe data that support the findings of this study are available upon request from the corresponding author. These data are not publicly available due to privacy or ethical restrictions.",
+  "output": {
+    "analyzing_data": "Yes",
+    "patient_level_health_outcomes": "Yes",
+    "evidence_of_randomization": "Randomized baseline periods of 2\u201312 weeks were implemented within a multiple-baseline single-case experimental design.",
+    "intervention_randomized": "No",
+    "reasoning": "The study analyzes patient-level health outcomes from 102 participants who completed the trial, measuring sensory reactivity and clinical symptoms using validated instruments (PROMset, SSP, SRS-2, RBS-R, ABC). However, this is a single-case experimental design with randomized baseline periods, not an individually randomized controlled trial. All participants received the same intervention (bumetanide treatment), and the randomization applied only to the length of the baseline period (2\u201312 weeks), not to allocation between treatment and control groups. This is a single-arm trial design, not a randomized controlled trial comparing intervention to control. Therefore, it does not meet the CONSORT eligibility criteria for individually randomized trials.",
+    "consort_flag": "Exclude"
+  },
+  "usage": {
+    "input_tokens": 3944,
+    "output_tokens": 314
+  },
+  "stop_reason": "tool_use",
+  "elapsed_sec": 3.99
+}

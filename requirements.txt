@@ -1,0 +1,7 @@
+# Python dependencies for code/03_run_screening.py
+# Pinned to the versions used to produce the bundled runs/ and results/.
+anthropic==0.105.2
+jsonschema==4.25.1
+pandas==2.3.3
+python-dotenv==1.2.1
+PyYAML==6.0.3

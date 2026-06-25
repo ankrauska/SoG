@@ -1,0 +1,28 @@
+{
+  "experiment_id": "exp_001_codebook",
+  "condition": "baseline",
+  "prompt_id": "screen_v1_codebook",
+  "prompt_sha": "c1572450",
+  "case_id": "case_095",
+  "run_index": 1,
+  "model": "claude-haiku-4-5",
+  "temperature": 0.0,
+  "seed": 20260604,
+  "timestamp": "2026-06-24T10:17:24Z",
+  "title": "Family Constellations for All Clinical Conditions: A Systematic Review and Meta-analysis Showing a Lack of Supporting Evidence",
+  "abstract": "Introduction Family Constellation Therapy (FCT) has been widely disseminated in clinical, public health, and judicial settings despite persistent concerns regarding its theoretical basis, safety, and the limited availability of rigorous randomised evidence supporting its clinical use.Objective The aim of this systematic review is to assess the effects of FCT across all clinical conditions, explicitly considering both benefits and harms; and summarise the characteristics of studies and intervention settings used in randomised controlled trials of FCT.Methods Following a prospectively registered protocol (CRD420251136190), we conducted a systematic search of seven databases (PubMed, EMBASE, APA PsycInfo, CENTRAL, BVS, Web of Science, and CINAHL) and grey literature (ICTRP and ProQuest database) without language or date restrictions to identify published and unpublished randomised controlled trials of FCT. Study selection, data extraction, risk of bias (RoB 2), and certainty of evidence (GRADE) were performed in duplicate. Statistical analyses followed a prospectively registered analysis plan with prespecified criteria for data pooling and for handling analytical limitations.Results No reliable evidence was found to support the use of FCT for any condition across both clinical and non-clinical samples. All trials included were judged to be at high risk of bias and all comparisons were rated as very low-certainty evidence. Concerns regarding potential adverse effects were identified, and the available data was insufficient to establish the effectiveness of the intervention, precluding any clinical recommendation.Conclusion Clinicians, policymakers, and consumers should reconsider adopting FCT while reliable evidence is not available.Competing Interest StatementThe authors have declared no competing interest.Funding StatementThis study did not receive any funding.Author DeclarationsI confirm all relevant ethical guidelines have been followed, and any necessary IRB and/or ethics committee approvals have been obtained.YesI confirm that all necessary patient/participant consent has been obtained and the appropriate institutional forms have been archived, and that any patient/participant/sample identifiers included were not known to anyone (e.g., hospital staff, patients or participants themselves) outside the research group so cannot be used to identify individuals.YesI understand that all clinical trials and any other prospective interventional studies must be registered with an ICMJE-approved registry, such as ClinicalTrials.gov. I confirm that any such study reported in the manuscript has been registered and the trial registration ID is provided (note: if posting a prospective study registered retrospectively, please provide a statement in the trial ID field explaining why the study was not registered in advance).YesI have followed all appropriate research reporting guidelines, such as any relevant EQUATOR Network research reporting checklist(s) and other pertinent material, if applicable.YesAll data produced in the present work are contained in the manuscript.",
+  "output": {
+    "analyzing_data": "Yes",
+    "patient_level_health_outcomes": "No",
+    "evidence_of_randomization": "No allocation language found",
+    "intervention_randomized": "No",
+    "reasoning": "This manuscript is a systematic review and meta-analysis that analyzes aggregated data from multiple randomised controlled trials of Family Constellation Therapy. While the abstract mentions that the review identified and assessed randomised controlled trials, the manuscript itself does not analyze individual patient-level data; instead, it pools and synthesizes results from previously published trials. Systematic reviews and meta-analyses are explicitly excluded from CONSORT compliance review eligibility because they aggregate data rather than report original empirical findings from a single trial. The abstract contains no allocation language describing how individual participants in this review were assigned to groups, because this is not a primary trial. Therefore, this paper does not meet the inclusion criteria.",
+    "consort_flag": "Exclude"
+  },
+  "usage": {
+    "input_tokens": 3595,
+    "output_tokens": 279
+  },
+  "stop_reason": "tool_use",
+  "elapsed_sec": 3.38
+}

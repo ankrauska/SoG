@@ -1,0 +1,28 @@
+{
+  "experiment_id": "exp_001_codebook",
+  "condition": "baseline",
+  "prompt_id": "screen_v1_codebook",
+  "prompt_sha": "c1572450",
+  "case_id": "case_089",
+  "run_index": 1,
+  "model": "claude-haiku-4-5",
+  "temperature": 0.0,
+  "seed": 20260604,
+  "timestamp": "2026-06-24T10:17:02Z",
+  "title": "Socioeconomic determinants and spatial distribution of leprosy in S\u00e3o Paulo State, Brazil (2017\u20132020): a municipal-level analysis",
+  "abstract": "Objectives Leprosy remains a significant public health challenge in Brazil, with distinct spatial and temporal patterns reflecting underlying socioeconomic inequalities. This study investigated the association between municipal socio-territorial indicators and the geographic distribution of leprosy in S\u00e3o Paulo State.Methods A total of 4562 new leprosy cases reported across 645 municipalities from 2017 to 2020 were analysed using Bayesian spatial modelling. The Besag\u2013York\u2013Molli\u00e9 2 (BYM2) model was implemented to estimate relative risk while accounting for spatial dependence, incorporating municipal wealth as a covariate. Expected case counts were calculated based on overall state incidence rates and local population sizes. Exceedance probabilities were computed to identify high-risk clusters using a threshold of relative risk >2.0.Results Local relative risk estimates ranged from 0.06 to 31.52 (median: 0.96), with substantial spatial heterogeneity across municipalities. Municipal wealth demonstrated a significant protective effect (posterior mean: \u22120.059, 95% CrI: \u22120.081 to \u22120.037), indicating lower leprosy incidence in economically advantaged areas. The mixing parameter (\u03c6 = 0.517) revealed approximately equal contributions of structured spatial and unstructured random effects. High-risk clusters were predominantly concentrated in western and northern regions of the state.Conclusions Leprosy distribution in S\u00e3o Paulo State exhibits significant spatial clustering associated with municipal wealth disparities. The persistent geographic patterns suggest that socioeconomic conditions are associated with variations in local leprosy risk across municipalities. These findings support targeted public health interventions in identified high-risk areas and highlight the importance of addressing underlying sociodemographic inequalities that may influence the local effectiveness of leprosy control strategies.Competing Interest StatementThe authors have declared no competing interest.Funding StatementThis study did not receive any fundingAuthor DeclarationsI confirm all relevant ethical guidelines have been followed, and any necessary IRB and/or ethics committee approvals have been obtained.YesThe details of the IRB/oversight body that provided approval or exemption for the research described are given below:This study used publicly available, de-identified leprosy case notification data from the Technical Division of Epidemiological Surveillance of Leprosy, part of the Center for Epidemiological Surveillance of the S\u00e3o Paulo State Health Department. Link: https://saude.sp.gov.br/cve-centro-de-vigilancia-epidemiologica-prof.-alexandre-vranjac/areas-de-vigilancia/hanseniase/dados-estatisticosI confirm that all necessary patient/participant consent has been obtained and the appropriate institutional forms have been archived, and that any patient/participant/sample identifiers included were not known to anyone (e.g., hospital staff, patients or participants themselves) outside the research group so cannot be used to identify individuals.YesI understand that all clinical trials and any other prospective interventional studies must be registered with an ICMJE-approved registry, such as ClinicalTrials.gov. I confirm that any such study reported in the manuscript has been registered and the trial registration ID is provided (note: if posting a prospective study registered retrospectively, please provide a statement in the trial ID field explaining why the study was not registered in advance).YesI have followed all appropriate research reporting guidelines, such as any relevant EQUATOR Network research reporting checklist(s) and other pertinent material, if applicable.YesAll data produced in the present study are available upon reasonable request to the authors",
+  "output": {
+    "analyzing_data": "Yes",
+    "patient_level_health_outcomes": "No",
+    "evidence_of_randomization": "No allocation language found",
+    "intervention_randomized": "No",
+    "reasoning": "The study analyzes empirical data (4562 leprosy cases across 645 municipalities from 2017\u20132020) using Bayesian spatial modelling. However, this is an observational epidemiological study analyzing municipal-level aggregated data to examine associations between socioeconomic indicators and geographic distribution of disease, not patient-level health outcomes from an intervention trial. No allocation language or randomization is present; the study uses secondary surveillance data to model spatial patterns and risk factors. This is a descriptive/analytical epidemiological study, not a randomized controlled trial evaluating an intervention at the individual patient level. It does not meet CONSORT eligibility criteria.",
+    "consort_flag": "Exclude"
+  },
+  "usage": {
+    "input_tokens": 3769,
+    "output_tokens": 281
+  },
+  "stop_reason": "tool_use",
+  "elapsed_sec": 7.37
+}

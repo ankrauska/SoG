@@ -1,0 +1,137 @@
+# id: screen_v1_codebook
+# task: abstract screening for CONSORT compliance review eligibility
+# parent: (none — baseline)
+# strategy: codebook (structured chain-of-thought with definitions and examples per question)
+# created: 2026-06-04
+# schema: prompts/screen_v1_codebook.schema.json (JSON Schema Draft-07; pass as response_format to the API and validate responses against it)
+
+You are screening abstracts to identify candidate papers for a CONSORT compliance review. The screening goal is to flag papers that report individually randomised controlled trials evaluating patient-level health outcomes. Papers that are protocols, economic evaluations, observational studies, meta-analyses, or cluster-randomised trials should be excluded.
+
+Read the abstract below carefully. Then answer six questions in order. The first four collect evidence. Question 5 asks you to think step by step over that evidence. Question 6 is the final include / exclude decision.
+
+If the abstract does not give enough evidence for a question, use the "Default if missing" value listed for that question.
+
+<abstract>
+{{ABSTRACT}}
+</abstract>
+
+---
+
+## Question 1: Analyzing data
+
+**Question:** Is this manuscript actively analyzing empirical data? Answer "Yes" or "No".
+
+**Description:** This is the first level of scaffolding to filter out non-research. Read the abstract to determine if the authors gathered/used data and performed an analysis.
+- Answer "Yes" if they are analyzing data (whether their own, or aggregating others' data like in a meta-analysis).
+- Answer "No" if this is a study protocol (planned trial with no results), an editorial, a letter to the editor, a perspective piece, or a narrative description without data analysis.
+
+**Examples:**
+- "Yes" — The abstract reports results from 500 patients.
+- "No" — "This protocol describes a planned trial..."
+- "No" — "In this commentary, we argue that..."
+
+**Default if missing:** "Yes"
+
+---
+
+## Question 2: Patient-level health outcomes
+
+**Question:** If they are analyzing data, does the analysis involve individual patient-level data to evaluate *health or clinical outcomes*? Answer "Yes", "No", or "Not Applicable".
+
+**Description:** This field isolates clinical research from economic modeling or non-health trials.
+- Answer "Yes" if the study analyzes data from individual patients to see if an intervention affected their health, disease progression, or clinical status. (This includes secondary/post-hoc analyses of patient health data.)
+- Answer "No" if the study is Health Economics Outcomes Research (HEOR) estimating costs, wages, or taxes based on algorithms.
+- Answer "No" if it is a meta-analysis or systematic review.
+- Answer "No" if the "patients" are actually administrative units (hospitals, clinics) or if the outcomes are strictly non-health related.
+- Answer "Not Applicable" if Question 1 was "No".
+
+**Examples:**
+- "Yes" — "Patients were assessed for reduction in depressive symptoms using the PHQ-9."
+- "No" — "We used an algorithm to estimate the cost-effectiveness and lost wages associated with the treatment."
+- "No" — "We reviewed the literature and pooled the hazard ratios of 14 previous trials."
+
+**Default if missing:** "Yes"
+
+---
+
+## Question 3: Evidence of randomization
+
+**Question:** Is there specific language in the title or abstract detailing how the intervention was assigned to the participants? If so, copy or closely paraphrase the relevant sentences. If no allocation language is found, write "No allocation language found".
+
+**Description:** Do not presume this study is a randomised trial. Investigate the text to find out *how* participants ended up in their respective groups. Search for terms like "randomly assigned", "randomised", or "allocated".
+
+Critically, look out for:
+1. **Cluster Randomisation:** "Clinics were randomised" (cluster-level, not individual).
+2. **Pseudo-randomisation:** "Using inverse probability weighting..." (observational data manipulated to look like a trial, and thus not randomised).
+3. **Single-Arm:** Only one group is described; everyone got the intervention (not randomised).
+4. **Meta-analysis:** Aggregates multiple studies and does not assess individual participant data (no evidence of randomisation).
+
+**Examples:**
+- "Patients were randomly assigned (1:1) to receive either Drug X or placebo."
+- "Participants were randomised to the intervention group or the control group."
+- "Clusters (primary care practices) were randomly assigned to intervention or usual care."
+- "No allocation language found."
+
+**Default if missing:** "No allocation language found"
+
+---
+
+## Question 4: Intervention randomized
+
+**Question:** Based on the evidence captured above, was the intervention individually randomised? Answer "Yes", "No", or "Unclear".
+
+**Description:**
+- Answer "Yes" if the abstract is clear that individual participants were randomly assigned/allocated to an intervention.
+- Answer "No" if no randomisation language was found, if it is cluster-randomised, if it is a single-arm trial, or if it relies on IPW / "pseudo-randomisation" of observational data.
+- Answer "Unclear" if the abstract mentions randomisation but is ambiguous about whether it was at the individual or cluster level, or implies an experiment but omits the allocation method.
+
+**Default if missing:** "Unclear"
+
+---
+
+## Question 5: Reasoning
+
+**Question:** Look at the sum total of the evidence collected in the previous fields. Briefly synthesize your findings. Should this paper be flagged for CONSORT compliance review?
+
+**Description:** Think step by step before making the final classification.
+1. Did they analyze data?
+2. Was it patient-level health outcomes (or was it HEOR / economics)?
+3. Was the intervention individually randomised?
+
+If the paper is a protocol, an economic evaluation (HEOR), an observational study, a meta-analysis, or a cluster-randomised trial, explicitly state that it does not fit the criteria. If it is an individually randomised trial evaluating health outcomes, state that it should be included. If there is ambiguity, note that it requires human review.
+
+**Examples:**
+- "The study analyzes data, but it is a Health Economics evaluation estimating costs, not patient-level health outcomes. It should be excluded."
+- "The study analyzes patient-level health outcomes, but the intervention was randomised at the clinic level (cluster-randomised). It should be excluded."
+- "The study analyzes patient-level health outcomes and explicitly states patients were randomly assigned to the drug or placebo. It should be included."
+- "The study analyzes patient outcomes and mentions an intervention, but the exact method of allocation (randomised vs observational) is vague. Requires human review."
+
+**Default if missing:** "Synthesizing evidence..."
+
+---
+
+## Question 6: CONSORT flag
+
+**Question:** Based on the reasoning above, should this abstract be flagged for full-text CONSORT compliance review? Answer "Include", "Exclude", or "Human Review".
+
+**Description:**
+- **Include:** The manuscript analyzes patient-level health outcomes AND `intervention_randomized` is "Yes".
+- **Exclude:** The manuscript does not analyze data (protocol), does not analyze patient-level health outcomes (HEOR / meta-analysis), OR `intervention_randomized` is "No" (observational, cluster-randomised, pseudo-randomised).
+- **Human Review:** `intervention_randomized` is "Unclear", or the abstract lacks sufficient detail to confidently choose Include or Exclude.
+
+**Default if missing:** "Human Review"
+
+---
+
+## Output format
+
+Respond with a single JSON object and nothing else. No prose before or after. No markdown code fence. The schema:
+
+{
+  "analyzing_data": "Yes" | "No",
+  "patient_level_health_outcomes": "Yes" | "No" | "Not Applicable",
+  "evidence_of_randomization": "<copied or paraphrased sentences, or 'No allocation language found'>",
+  "intervention_randomized": "Yes" | "No" | "Unclear",
+  "reasoning": "<one short paragraph synthesizing Questions 1-4>",
+  "consort_flag": "Include" | "Exclude" | "Human Review"
+}

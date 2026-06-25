@@ -1,0 +1,28 @@
+{
+  "experiment_id": "exp_001_codebook",
+  "condition": "baseline",
+  "prompt_id": "screen_v1_codebook",
+  "prompt_sha": "c1572450",
+  "case_id": "case_061",
+  "run_index": 1,
+  "model": "claude-haiku-4-5",
+  "temperature": 0.0,
+  "seed": 20260604,
+  "timestamp": "2026-06-24T10:15:18Z",
+  "title": "Community burden of diphtheria during the 2023\u201324 epidemic in Kano State, Nigeria: a population-based household survey",
+  "abstract": "Background Nigeria has experienced its largest recorded diphtheria outbreak since late 2022, centred on Kano State, where facility-based surveillance documented over 18,000 confirmed cases. The true community burden remains unknown. We conducted a population-based household survey to estimate community attack rates, mortality, vaccination coverage, and determinants of infection and death.Methods We performed a retrospective household survey (September\u2013October 2024) using spatially randomised cluster sampling (65 clusters, ~15 households each; recall period January 2023 to interview). Survey-weighted analyses, multivariable logistic regression, and sensitivity analyses were used.Findings We enrolled 7,998 individuals from 1,068 households. The community attack rate was 1\u00b71% (95% CI 0\u00b77\u20131\u00b74), 4\u00b72 times (2\u00b77\u20135\u00b73) higher than facility-based estimates. The case fatality ratio was 8\u00b78% (1\u00b79\u201315\u00b76) overall and 21\u00b73% among children under five; two thirds of deaths occurred at home. Delayed care-seeking of four or more days was associated with markedly higher mortality (risk ratio 32\u00b76, 95% CI 2\u00b74\u2013450\u00b70). Vaccination was strongly protective against death (vaccine effectiveness 57%, 95% CI 34\u201372%; E-value 4\u00b707). Among campaign-eligible children, routine EPI coverage was 58\u00b71% and campaign coverage was 52\u00b74%; 41\u00b79% (95% CI 39\u00b70\u201344\u00b79) of eligible children had no evidence of vaccination from either source.Interpretation Community diphtheria burden substantially exceeded facility surveillance estimates, with most deaths occurring outside the health system. Delayed care-seeking and low vaccination coverage were the main drivers of mortality, highlighting the need for improved community surveillance, decentralised care, and better-targeted vaccination.Competing Interest StatementThe authors have declared no competing interest.Funding StatementThis study was funded by Medecins Sans Frontieres Operational Centre West and Central AfricaAuthor DeclarationsI confirm all relevant ethical guidelines have been followed, and any necessary IRB and/or ethics committee approvals have been obtained.YesThe details of the IRB/oversight body that provided approval or exemption for the research described are given below:Kano State Ministry of Health Research Ethics Committee provided approval for the study (NHREC Approval Number; NHREC/17/03//2018) on 13th June 2024I confirm that all necessary patient/participant consent has been obtained and the appropriate institutional forms have been archived, and that any patient/participant/sample identifiers included were not known to anyone (e.g., hospital staff, patients or participants themselves) outside the research group so cannot be used to identify individuals.YesI understand that all clinical trials and any other prospective interventional studies must be registered with an ICMJE-approved registry, such as ClinicalTrials.gov. I confirm that any such study reported in the manuscript has been registered and the trial registration ID is provided (note: if posting a prospective study registered retrospectively, please provide a statement in the trial ID field explaining why the study was not registered in advance).YesI have followed all appropriate research reporting guidelines, such as any relevant EQUATOR Network research reporting checklist(s) and other pertinent material, if applicable.YesAnonymised individual-level data will be made available upon reasonable request to the corresponding author, subject to approval by the MSF data sharing committee.",
+  "output": {
+    "analyzing_data": "Yes",
+    "patient_level_health_outcomes": "No",
+    "evidence_of_randomization": "No allocation language found",
+    "intervention_randomized": "No",
+    "reasoning": "This manuscript analyzes empirical data from a population-based household survey of 7,998 individuals conducted in Kano State, Nigeria. However, the study is a retrospective observational survey using spatially randomised cluster sampling for survey design purposes, not a randomised controlled trial. There is no evidence of individual-level randomisation of an intervention; instead, the study evaluates health outcomes (diphtheria attack rates, mortality, vaccination coverage) in a cross-sectional/observational manner. The \"spatially randomised cluster sampling\" refers to the sampling methodology for the survey itself, not randomisation of participants to an intervention. This is an epidemiological surveillance study, not an individually randomised trial, and therefore does not meet CONSORT eligibility criteria.",
+    "consort_flag": "Exclude"
+  },
+  "usage": {
+    "input_tokens": 3767,
+    "output_tokens": 301
+  },
+  "stop_reason": "tool_use",
+  "elapsed_sec": 3.68
+}

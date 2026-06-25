@@ -1,0 +1,28 @@
+{
+  "experiment_id": "exp_001_codebook",
+  "condition": "baseline",
+  "prompt_id": "screen_v1_codebook",
+  "prompt_sha": "c1572450",
+  "case_id": "case_064",
+  "run_index": 1,
+  "model": "claude-haiku-4-5",
+  "temperature": 0.0,
+  "seed": 20260604,
+  "timestamp": "2026-06-24T10:15:29Z",
+  "title": "Liver Biomarker Improves AHA/ACC 10-year ASCVD Risk Prediction in US and China Cohorts with ML",
+  "abstract": "Introduction Accurate stratification of hard atherosclerotic cardiovascular disease (ASCVD) risk remains challenging despite advances in prevention. Liver function biomarkers (LFBs), particularly gamma-glutamyl transferase (GGT), have been linked to cardiovascular outcomes, yet their contribution to hard ASCVD risk prediction is not well defined.Methods This study analyzed data from the National Health and Nutrition Examination Survey (NHANES, 2005\u20132018) to assess cross-sectional associations between LFBs and 10-year hard ASCVD risk estimated by the ACC/AHA Pooled Cohort Equations. Multivariable regression, restricted cubic splines, and mediation analyses were applied to examine independent and dose\u2013response relationships. External validation was performed in the China Health and Retirement Longitudinal Study (CHARLS) and NHANES using machine learning models (CoxBoost, Naive Bayes and Random Forest).Results Among 5,731 NHANES participants, GGT showed an independent linear association with hard ASCVD risk (P-trend = 0.003), partly mediated by systolic blood pressure (44.8%), HbA1c (19.0%), and high density lipoprotein cholesterol (13.4%). Machine learning (ML) models incorporating GGT, alkaline phosphatase (ALP), and globulin alongside traditional risk factors improved predictive accuracy, with Naive Bayes achieving an AUC of 0.751 in NHANES validation.Conclusions GGT is an independent and biologically plausible biomarker of hard ASCVD risk, acting through cardiometabolic pathways. Incorporating LFBs into risk prediction models, particularly with machine learning, enhances risk stratification and may facilitate early identification of high-risk individuals.Competing Interest StatementThe authors have declared no competing interest.Funding StatementThis study did not receive any fundingAuthor DeclarationsI confirm all relevant ethical guidelines have been followed, and any necessary IRB and/or ethics committee approvals have been obtained.YesThe details of the IRB/oversight body that provided approval or exemption for the research described are given below:Institutional Review Board of Peking University (IRB00001052-11015) and The National Center for Health Statistics (NCHS) Ethics Review Board (ERB) gave ethical approval for this work. I confirm that all necessary patient/participant consent has been obtained and the appropriate institutional forms have been archived, and that any patient/participant/sample identifiers included were not known to anyone (e.g., hospital staff, patients or participants themselves) outside the research group so cannot be used to identify individuals.YesI understand that all clinical trials and any other prospective interventional studies must be registered with an ICMJE-approved registry, such as ClinicalTrials.gov. I confirm that any such study reported in the manuscript has been registered and the trial registration ID is provided (note: if posting a prospective study registered retrospectively, please provide a statement in the trial ID field explaining why the study was not registered in advance).YesI have followed all appropriate research reporting guidelines, such as any relevant EQUATOR Network research reporting checklist(s) and other pertinent material, if applicable.YesNHANES datasets are available on the National Center for Health Statistics website (www.cdc.gov/nchs/nhanes/index.htm). CHARLS datasets can be found at https://charls.pku.edu.cn/. Coding manuscripts and filtered datasets are available under request. And detailed coding manuscripts could be found at GitHub: CHENGlinLiuleen/ASCVDvalidation. https://github.com/CHENGlinLiuleen/ASCVDvlidation https://www.cdc.gov/nchs/nhanes/index.htm https://charls.pku.edu.cn/",
+  "output": {
+    "analyzing_data": "Yes",
+    "patient_level_health_outcomes": "No",
+    "evidence_of_randomization": "No allocation language found",
+    "intervention_randomized": "No",
+    "reasoning": "This manuscript analyzes empirical data from NHANES and CHARLS cohorts, examining associations between liver biomarkers and cardiovascular risk prediction using machine learning models. However, this is not a randomized controlled trial. The study is observational in nature, analyzing cross-sectional associations and using predictive modeling rather than testing the effect of a randomized intervention on patient health outcomes. No allocation language or evidence of randomization is present in the abstract. The focus is on risk prediction and biomarker validation, not on evaluating whether a randomized intervention improves clinical outcomes. Therefore, it does not meet CONSORT eligibility criteria.",
+    "consort_flag": "Exclude"
+  },
+  "usage": {
+    "input_tokens": 3858,
+    "output_tokens": 272
+  },
+  "stop_reason": "tool_use",
+  "elapsed_sec": 3.44
+}
