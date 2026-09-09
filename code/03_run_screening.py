@@ -1,19 +1,40 @@
 #!/usr/bin/env python3
-"""Run an abstract-screening experiment.
+"""Stage 03: run the codebook prompt over every abstract.
 
-Reads an experiment YAML and, for each (condition x abstract x run_index),
-calls Claude with the codebook prompt and writes one structured JSON record
-per call to runs/{experiment_id}/{condition}/.
+WHAT THIS DOES
+    Reads an experiment YAML and, for each (condition x abstract x run_index),
+    fills the prompt template with one abstract, calls Claude, and writes one
+    structured JSON record per call under the experiment's runs directory.
 
-Structured output is enforced by passing the prompt's schema sidecar as a
-tool input_schema with tool_choice forcing the model to call that tool;
-the response is then validated again with jsonschema as a belt-and-braces
-check.
+WHY EACH CALL GETS ITS OWN FILE
+    This stage is the only part of the pipeline that is not reproducible from
+    what is in the repo: it costs money, depends on a live API, and cannot be
+    replayed after the fact. So every call is recorded in full -- the prompt
+    hash, the model, the temperature, the exact abstract sent, the decision,
+    the token usage -- and those files are treated as append-only evidence.
+    Stage 04 reads its labels from them rather than from a summary table, so
+    every number in results/ traces back to an individual call.
+
+    The prompt_sha in particular is what lets you detect the most insidious
+    failure in prompt-based research: someone edits the prompt after the run,
+    and the recorded decisions no longer correspond to the prompt file sitting
+    in the repo. Compare the sha to catch it.
+
+HOW THE OUTPUT IS KEPT STRUCTURED
+    The decision has to be machine-readable or stage 04 cannot fit anything.
+    Rather than asking for JSON in the prompt and hoping, we pass the prompt's
+    schema sidecar as a tool input_schema and force the model to call that
+    tool, so the API itself constrains the shape of the reply. The result is
+    then validated against the same schema with jsonschema, as a belt-and-
+    braces check that also guards against the schema and prompt drifting apart.
 
 Usage
 -----
     .venv/bin/python code/03_run_screening.py experiments/exp_001_codebook.yaml
     .venv/bin/python code/03_run_screening.py experiments/exp_001_codebook.yaml --limit 2
+
+--limit runs only the first N abstracts. Use it for a smoke test before
+spending a full run's worth of tokens.
 """
 
 from __future__ import annotations
@@ -44,7 +65,12 @@ def utc_iso() -> str:
 
 
 def call_claude(client, model, temperature, max_tokens, prompt, schema):
-    """Single Claude call. Uses tool_use to force schema-conforming output."""
+    """Single Claude call.
+
+    Declares the codebook's output schema as a tool and forces the model to
+    call it, which is what makes the reply schema-conforming rather than
+    merely JSON-shaped.
+    """
     tool = {
         "name": "submit_decision",
         "description": "Submit the structured screening decision for one abstract.",
@@ -76,7 +102,11 @@ def main(config_path: Path, limit: int | None) -> None:
         corpus = corpus.head(limit)
 
     client = anthropic.Anthropic()
-    runs_root = ROOT / "runs" / exp_id
+
+    # Where the decision records go. Honour output.runs_dir from the config so
+    # the YAML stays the single source of truth; stage 04 resolves the same key
+    # when it reads these files back.
+    runs_root = ROOT / config.get("output", {}).get("runs_dir", f"runs/{exp_id}")
 
     total_in = total_out = 0
     t_start = time.monotonic()
@@ -102,6 +132,11 @@ def main(config_path: Path, limit: int | None) -> None:
 
         for _, row in corpus.iterrows():
             case_id = row["case_id"]
+            # The corpus holds title and abstract separately; the codebook has
+            # a single {{ABSTRACT}} placeholder, so they are joined here. The
+            # title carries real signal for this task (many abstracts announce
+            # "randomised controlled trial" there and nowhere else), so it is
+            # deliberately included rather than dropped.
             abstract_block = f"Title: {row['title']}\n\n{row['abstract']}"
             filled_prompt = prompt_text.replace("{{ABSTRACT}}", abstract_block)
 

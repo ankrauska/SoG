@@ -1,3 +1,17 @@
+# ---------------------------------------------------------------------------
+# Experiment: exp_001_codebook  --  the worked example from worked_example_paper.pdf
+#
+# One experiment = one complete pass of the pipeline. This file is the single
+# source of truth for that pass: who the raters are, which abstracts they
+# labelled, which prompt and model produced the LLM decisions, and how the
+# solve-or-guess model is fitted. Every number in results/exp_001_codebook/
+# traces back to this file.
+#
+# To run your own study, copy this file, change the values, and run the
+# pipeline against your copy. You should not need to edit any script.
+# Each key is documented in experiments/README.md.
+# ---------------------------------------------------------------------------
+
 id: exp_001_codebook
 description: >
   Baseline run of the codebook prompt on the screening corpus. One pass
@@ -5,25 +19,87 @@ description: >
   screening decisions, to feed the solve-or-guess analysis against the
   three human reviewers.
 
+# --- The LLM call ----------------------------------------------------------
+# Read by code/03_run_screening.py. temperature 0 makes the run as close to
+# deterministic as the API allows; n_runs > 1 would repeat each abstract so you
+# could measure run-to-run variance.
 model: claude-haiku-4-5
 temperature: 0.0
 max_tokens: 1024
+n_runs: 1
+seed: 20260604
 
+# One block per prompt variant you want to compare. Each condition writes its
+# own subdirectory under runs_dir, so an A/B comparison is two entries here
+# rather than two experiments.
 conditions:
   - name: baseline
     prompt: prompts/screen_v1_codebook.txt
 
 inputs:
+  # One entry per HUMAN rater. The `id` names that rater everywhere downstream
+  # -- in results/<exp>/rater_labels_long.csv, in solving_probabilities.csv,
+  # and in the pairwise kappa table -- so pick ids you want to see in your
+  # results. `file` is relative to the project root.
+  #
+  # The number of reviewers is free. The solve-or-guess model needs three or
+  # more raters to be identified, which with one LLM means two or more humans.
+  #
+  # Exactly one reviewer is marked `canonical_text: true`. All reviewers
+  # labelled the same items, so every file carries the same titles and
+  # abstracts; this flag just picks which copy code/02 reads them from when it
+  # builds the corpus the LLM sees.
+  reviewers:
+    - id: A
+      file: data/inputs/reviewerA.csv
+      canonical_text: true
+    - id: B
+      file: data/inputs/reviewerB.csv
+    - id: C
+      file: data/inputs/reviewerC.csv
+
+  # Column names inside the reviewer CSVs. If your spreadsheet calls the
+  # decision column "Decision" instead of "CONSORT flag", change it here
+  # rather than in the R scripts. `title` is the key the reviewer files and
+  # the LLM decisions are joined on, so it must be identical across files.
+  # `reasoning` and `difficulty` are optional; omit them if you did not
+  # collect them.
+  reviewer_columns:
+    title: Title
+    abstract: Abstract
+    label: CONSORT flag
+    reasoning: Reasoning
+    difficulty: Difficulty
+
+  # Written by code/02, read by code/03: titles and abstracts only, no labels.
   manifest: data/inputs/screening_corpus.csv
-  # csv columns: case_id, title, abstract
 
-n_runs: 1
-seed: 20260604
+  # Written by code/01, read by code/04: all reviewers' labels in one table.
+  merged_labels: data/derived/human_reviewer_labels_merged.csv
 
-evaluation:
-  human_labels: data/derived/human_reviewer_labels_merged.csv
-  rubric: prompts/screen_v1_codebook.txt
-  estimands: [pairwise_kappa, solving_probability_ratio]
+# --- Fitting the solve-or-guess model --------------------------------------
+# Read by code/04 and code/05.
+analysis:
+  # The automated rater's id. It is passed to the estimator as
+  # `system_rater_id`, and must not collide with any reviewer id above.
+  system_rater_id: LLM
 
+  # Which condition's runs to analyse, when there is more than one.
+  condition: baseline
+
+  # What to do with the codebook's "Human Review" abstain label, which the
+  # humans never use. One of: include, exclude, keep, drop.
+  # The reasoning behind this choice is documented in code/04.
+  human_review_action: include
+
+  # Bootstrap replicates for the confidence intervals, and the seeds that make
+  # code/04 and code/05 reproducible. Changing a seed changes the intervals in
+  # the last decimal place; changing B changes how stable they are.
+  bootstrap_B: 1000
+  seed_fit: 20260624
+  seed_diagnostic: 20260625
+
+# --- Where the LLM decisions are written and read from ---------------------
+# code/03 writes runs_dir/<condition>/, code/04 reads it back.
 output:
-  runs_dir: runs/exp_001_codebook/
+  runs_dir: runs/exp_001_codebook
