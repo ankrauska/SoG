@@ -262,7 +262,18 @@ kit is an application of it; cite the source for the method itself.
 
 ## Licensing
 
-The method implemented under `code/em/` is patented. See
-[`NOTICE.md`](NOTICE.md) — terms for reuse are **not yet settled**, and are not
-this kit's to grant. Provenance for the vendored estimator is in
+**Free for noncommercial use, including all academic work.**
+
+The kit is licensed by Auden Krauska under
+[PolyForm Noncommercial 1.0.0](LICENSE). The solve-or-guess method under
+`code/em/` is separately the subject of a pending patent application owned by
+Karl Rohe, who has made an irrevocable public covenant not to assert it against
+noncommercial use.
+
+Use at a university, charity, or government body counts as noncommercial
+regardless of who funds the work. Use by or for a business does not, even if you
+are an academic doing it on your own account.
+
+Read [`NOTICE.md`](NOTICE.md) for the full terms, including Karl Rohe's patent
+note in his own words. Provenance for the vendored estimator is in
 [`code/em/SOURCE.md`](code/em/SOURCE.md).

@@ -1,61 +1,93 @@
-# Notice — provenance and licensing
+# Notice — licensing and patents
 
-> **⚠️ PLACEHOLDER — NOT YET SETTLED.**
-> The terms below are a description of the situation, not a licence grant.
-> Confirm the actual terms with the patent holder and, if applicable, the
-> university technology-transfer office before publishing or sharing this
-> repository. Nothing here has been reviewed by a lawyer.
+This repository contains two things with different owners and different terms:
+the kit, and the method it implements. Both are settled. Read this file before
+reusing either.
 
-## Two things with different owners
+## The code
 
-This repository contains two kinds of material, and they do not carry the same
+The kit — the pipeline scripts under `code/`, the codebook prompt and schema,
+the experiment configuration, the documentation, and the worked example's data
+and results — is **Auden Krauska's, licensed under PolyForm Noncommercial
+1.0.0**. See [`LICENSE`](LICENSE).
+
+## The method
+
+The files under `code/em/` implement the solve-or-guess method of Rohe et al.
+and are copied verbatim from the methodology code (see
+[`code/em/SOURCE.md`](code/em/SOURCE.md)). The method is the subject of a
+pending patent application. The following note from the applicant states the
 terms.
 
-**1. The kit.** The pipeline scripts (`code/01`–`code/05`, `code/config.R`), the
-codebook prompt and schema, the experiment configuration, the documentation, and
-the worked example's data and results. This is the application layer, written
-for this project.
+---
 
-**2. The solve-or-guess method and estimator.** The files under `code/em/` are
-copied verbatim from the published solve-or-guess methodology (Rohe et al.), and
-they implement a method that is **the subject of a patent held by Karl Rohe**.
-See `code/em/SOURCE.md`.
+### A note on patents, from Karl Rohe
 
-The second is not this project's to license. Vendoring the estimator here is a
-convenience so the kit runs without an external checkout; it does not grant
-anyone rights to the underlying method.
+I personally own a pending international patent application (PCT/US2026/036035)
+that describes methods related to this software. No patent has issued yet. I
+filed it so that commercial use of these methods stays my decision, not so it
+could get in the way of the people this work was made for.
 
-## Intent
+So here is the promise. If you use or share this software, or practice anything
+claimed in that application or its patent family (details below), for a
+noncommercial purpose, I will never assert any patent in that family against you
+for doing so. Not this code, not your fork of it, not your own implementation
+from scratch. Replicate it, extend it, teach with it, break it and tell us how.
 
-This kit is published for **academic research use** — reproducing the worked
-example, and running the same validation on other screening tasks in a research
-context. Commercial use of the solve-or-guess method requires permission from
-the patent holder.
+The promise stops at commercial use, and PolyForm's definition draws the line.
+Outside a university, charity, or government body, that means use by or for a
+business is not covered: research and development inside a company, evaluating
+the methods for a product, use in a commercial product or service, and
+consulting, advisory, or contract work for a business on your own account, paid
+or unpaid, even if you are an academic. I reserve all patent rights for those
+uses.
 
-## Why this is not simply an open-source licence
+The details, so nobody has to guess:
 
-A patent changes the calculus in a way a standard licence file does not capture,
-and choosing the wrong one gives away more than intended:
+- "Noncommercial purpose" means a permitted purpose under the Noncommercial
+  Purposes, Personal Uses, and Noncommercial Organizations sections of PolyForm
+  Noncommercial 1.0.0
+  (https://polyformproject.org/licenses/noncommercial/1.0.0). Only those purpose
+  sections are borrowed, as a fixed definition, whether or not that license
+  still governs the copy you are using. They count use by a university, charity,
+  or government body as noncommercial regardless of who funds the work, and I
+  mean it to, including the students and staff doing that institution's work.
+  That coverage does not extend to a business's own use.
+- The promise is made to everyone, needs no signature, and is irrevocable. It
+  covers any patent that issues from this application or claims priority,
+  directly or indirectly, to it or to its provisional, anywhere in the world,
+  including national and regional patents, continuations, continuations-in-part,
+  divisionals, and reissues, and any right to compensation for use before a
+  patent issues (35 U.S.C. § 154(d) or similar laws elsewhere).
+- It runs with the patents. Anyone who later owns, controls, or is exclusively
+  licensed under these rights takes them subject to it, and I will make every
+  transfer or license of these rights expressly subject to it.
+- What you did while your use was noncommercial stays covered if you later go
+  commercial. What you do commercially afterward does not.
+- This is a covenant not to sue. It does not authorize anyone to make, sell, or
+  hand over a copy for commercial use, whoever they got it from.
+- The code itself is Auden Krauska's, licensed under PolyForm Noncommercial
+  1.0.0. Nothing here changes that license. This note grants no other rights and
+  comes with no warranty. It binds me, and you may rely on it. If I ever update
+  this note, it will only widen the promise.
 
-- **MIT / BSD** grant copyright permissions but say nothing about patents. A
-  user who complied with them could still be infringing, so the licence would
-  not actually convey what a user needs.
-- **Apache 2.0** includes an *express patent grant* from contributors. Applying
-  it to this repository could be read as granting a patent licence to every
-  recipient for any use — likely far broader than intended.
-- **Academic-use-only** terms are a real and common arrangement for patented
-  methods, but they are not open-source under the OSI definition, and the text
-  has to be drafted deliberately rather than adapted from a template.
+— Karl Rohe, September 14, 2026
 
-## To resolve
+Last updated: September 14, 2026
 
-- [ ] Confirm with Karl Rohe how the patented method should be licensed for reuse.
-- [ ] Check with the university technology-transfer office (for UW–Madison, WARF),
-      which will typically have standard research-use licence text for exactly
-      this situation.
-- [ ] Decide terms for the kit layer, which may be more permissive than the
-      method layer.
-- [ ] Replace this placeholder with the settled terms, and add a `LICENSE` file.
+---
+
+## What this means in practice
+
+If you are at a university, a charity, or a government body, or working on this
+for personal research or study, you are covered for both the code and the
+method. Reproduce the worked example, run the validation on your own screening
+task, fork it, teach with it.
+
+If you are at a business, or doing contract or consulting work for one, neither
+the code license nor the patent covenant covers you, even if you are an
+academic doing that work on your own account. Contact Karl Rohe about the
+patent, and Auden Krauska about the code.
 
 ## Citing the method
 

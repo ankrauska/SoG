@@ -21,5 +21,7 @@ functions you actually need, what they return, and the one easy mistake (the
 ability estimates come back on the logit scale, not as probabilities). The guide
 describes these files without modifying them.
 
-For licensing, see [`../../NOTICE.md`](../../NOTICE.md): the method is patented,
-and the terms for reuse are not this kit's to grant.
+For licensing, see [`../../NOTICE.md`](../../NOTICE.md). The method is the
+subject of a pending patent application owned by Karl Rohe, who has publicly
+covenanted not to assert it against noncommercial use. His note there states
+the terms in full.

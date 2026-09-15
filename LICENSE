@@ -1,0 +1,28 @@
+Copyright (c) 2026 Auden Krauska
+
+This software is licensed under the PolyForm Noncommercial License 1.0.0.
+
+The authoritative text of that license is published at:
+
+    https://polyformproject.org/licenses/noncommercial/1.0.0
+
+The license's Notices section is satisfied by providing recipients with either
+a copy of the terms or that URL. If you redistribute this software, pass along
+this file, or the URL above, together with NOTICE.md.
+
+In brief, and without replacing the terms at the URL above: you may use, modify,
+fork, and share this software for any noncommercial purpose. Use by a
+university, charity, or government body counts as noncommercial regardless of
+funding. Use by or for a business does not.
+
+----------------------------------------------------------------------
+
+PATENTS
+
+The method implemented under code/em/ is the subject of a pending patent
+application owned by Karl Rohe, who has made an irrevocable public covenant not
+to assert it against noncommercial use.
+
+That covenant is reproduced in full in NOTICE.md. It is a separate instrument
+from this license, it is not granted by this license, and this license does not
+modify it. Read NOTICE.md before relying on either.
