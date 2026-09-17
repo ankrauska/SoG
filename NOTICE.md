@@ -6,18 +6,24 @@ reusing either.
 
 ## The code
 
-The kit — the pipeline scripts under `code/`, the codebook prompt and schema,
-the experiment configuration, the documentation, and the worked example's data
-and results — is **Auden Krauska's, licensed under PolyForm Noncommercial
-1.0.0**. See [`LICENSE`](LICENSE).
+All of the code in this repository is licensed under **PolyForm Noncommercial
+1.0.0**. See [`LICENSE`](LICENSE). Two parties hold the copyright:
+
+- **The kit** — the pipeline scripts, the codebook prompt and schema, the
+  experiment configuration, the documentation, and the worked example's data
+  and results — is Auden Krauska's.
+- **The vendored estimator** under `code/em/` is Rohe et al.'s, copied verbatim
+  from the methodology code (see [`code/em/SOURCE.md`](code/em/SOURCE.md)).
+
+Same license either way, so for a user the distinction is about attribution
+rather than permission.
 
 ## The method
 
-The files under `code/em/` implement the solve-or-guess method of Rohe et al.
-and are copied verbatim from the methodology code (see
-[`code/em/SOURCE.md`](code/em/SOURCE.md)). The method is the subject of a
-pending patent application. The following note from the applicant states the
-terms.
+Copyright is not the only thing covering `code/em/`. The method those files
+implement is separately the subject of a pending patent application, which a
+copyright license does not address. The following note from the applicant
+states the terms.
 
 ---
 

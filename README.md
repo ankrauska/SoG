@@ -264,11 +264,11 @@ kit is an application of it; cite the source for the method itself.
 
 **Free for noncommercial use, including all academic work.**
 
-The kit is licensed by Auden Krauska under
-[PolyForm Noncommercial 1.0.0](LICENSE). The solve-or-guess method under
-`code/em/` is separately the subject of a pending patent application owned by
-Karl Rohe, who has made an irrevocable public covenant not to assert it against
-noncommercial use.
+All of the code here is under [PolyForm Noncommercial 1.0.0](LICENSE) — the kit
+copyright Auden Krauska, the vendored estimator under `code/em/` copyright Rohe
+et al. The method that estimator implements is separately the subject of a
+pending patent application owned by Karl Rohe, who has made an irrevocable
+public covenant not to assert it against noncommercial use.
 
 Use at a university, charity, or government body counts as noncommercial
 regardless of who funds the work. Use by or for a business does not, even if you

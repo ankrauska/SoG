@@ -21,7 +21,11 @@ functions you actually need, what they return, and the one easy mistake (the
 ability estimates come back on the logit scale, not as probabilities). The guide
 describes these files without modifying them.
 
-For licensing, see [`../../NOTICE.md`](../../NOTICE.md). The method is the
-subject of a pending patent application owned by Karl Rohe, who has publicly
-covenanted not to assert it against noncommercial use. His note there states
-the terms in full.
+These files are copyright Rohe et al., and are licensed under PolyForm
+Noncommercial 1.0.0, the same license as the rest of this repository. See
+[`../../LICENSE`](../../LICENSE).
+
+Copyright is not the whole picture. The method these files implement is
+separately the subject of a pending patent application owned by Karl Rohe, who
+has publicly covenanted not to assert it against noncommercial use. His note in
+[`../../NOTICE.md`](../../NOTICE.md) states the terms in full.
