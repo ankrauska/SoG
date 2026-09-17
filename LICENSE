@@ -3,7 +3,12 @@ Copyright (c) 2026 Rohe et al., for the vendored estimator under code/em/
 
 All of it is licensed under the PolyForm Noncommercial License 1.0.0, below.
 
-Patents: see NOTICE.md. Separate instrument, not granted or modified by this license.
+The two lines below are required notices under the Notices section of that
+license. If you pass any part of this software to anyone else, pass these lines
+along with it.
+
+Required Notice: Copyright Auden Krauska; estimator under code/em/ copyright Rohe et al. (https://github.com/ankrauska/SoG)
+Required Notice: The method implemented under code/em/ is the subject of pending patent application PCT/US2026/036035, owned by Karl Rohe, who has irrevocably covenanted not to assert it against noncommercial use. The covenant is reproduced in NOTICE.md.
 
 # PolyForm Noncommercial License 1.0.0
 

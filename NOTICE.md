@@ -18,6 +18,23 @@ All of the code in this repository is licensed under **PolyForm Noncommercial
 Same license either way, so for a user the distinction is about attribution
 rather than permission.
 
+### If you redistribute this
+
+The license's Notices section requires that anyone who gets any part of this
+software from you also gets the license terms **and** any lines beginning with
+`Required Notice:`. There are two, both in [`LICENSE`](LICENSE):
+
+```
+Required Notice: Copyright Auden Krauska; estimator under code/em/ copyright Rohe et al. (https://github.com/ankrauska/SoG)
+Required Notice: The method implemented under code/em/ is the subject of pending patent application PCT/US2026/036035, owned by Karl Rohe, who has irrevocably covenanted not to assert it against noncommercial use. The covenant is reproduced in NOTICE.md.
+```
+
+The second one exists for a specific reason. The license obliges you to pass on
+the license, not this file. Without that line a fork could comply perfectly and
+still leave its users unaware that the method is patented at all, or that an
+irrevocable promise covers their noncommercial use of it. The notice makes the
+patent situation travel with the code.
+
 ## The method
 
 Copyright is not the only thing covering `code/em/`. The method those files
