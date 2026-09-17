@@ -58,11 +58,24 @@ seed: 20260604
 
 | Key | Default | Notes |
 |---|---|---|
-| `model` | required | Model id passed straight to the API. |
+| `model` | required | Model id passed straight to the API. **Must support forced tool use** — see below. |
 | `temperature` | `0.0` | 0 makes the run as close to deterministic as the API allows. Raise it only if you are deliberately studying run-to-run variance. |
 | `max_tokens` | `1024` | Must comfortably fit the codebook's JSON output, including the reasoning field. If responses are truncated, raise it — a truncated tool call fails schema validation. |
 | `n_runs` | `1` | Passes per abstract. `> 1` repeats each abstract, which lets you measure the LLM's own variability — but `code/04` expects exactly one record per case, so aggregate first. |
 | `seed` | none | Recorded in each run file for provenance. |
+
+> **Model compatibility.** `code/03` gets schema-conforming output by declaring
+> the codebook's schema as a tool and setting
+> `tool_choice={"type": "tool", "name": "submit_decision"}`. Forced tool use is
+> **rejected with a 400 on the newest Claude models** (`tool_choice` `"tool"` and
+> `"any"`), so changing `model:` to a current frontier model will fail rather
+> than silently degrade.
+>
+> The worked example uses `claude-haiku-4-5`, which supports it. If you switch to
+> a model that does not, adapt `code/03` to one of the current mechanisms —
+> structured outputs via `output_config.format`, or `tool_choice: {"type": "auto"}`
+> with `strict: true` on the tool and an instruction naming it. Check the current
+> API documentation for your model before assuming either works.
 
 ### `conditions`
 

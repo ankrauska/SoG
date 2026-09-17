@@ -220,14 +220,43 @@ One consequence worth knowing: because the tool call constrains the output, any
 "respond only with JSON" instructions in the prompt body are belt-and-braces
 rather than the mechanism. The API contract is what governs.
 
-> **A known wrinkle in `screen_v1_codebook.txt`.** Its header says to pass the
-> schema "as `response_format` to the API", and its closing section instructs
-> the model to reply with bare JSON. Neither describes what `code/03` actually
-> does — it forces a tool call, as above. The prompt is left uncorrected on
-> purpose: it is frozen, and its `prompt_sha` (`c1572450`) is recorded in every
-> run under `runs/exp_001_codebook/`. Editing it to fix a comment would break
-> that provenance chain for a cosmetic gain. If you write a v2, describe the
-> mechanism correctly there.
+### If you are adapting this codebook, update the mechanism
+
+`screen_v1_codebook.txt` is published exactly as it was run, and it is dated in
+two places you should not copy forward.
+
+Its header says to pass the schema "as `response_format` to the API", and its
+closing `## Output format` section instructs the model to reply with bare JSON.
+Neither describes what `code/03` actually does, which is to force a tool call.
+`response_format` is not an Anthropic parameter at all; the current equivalents
+are structured outputs (`output_config.format`) or a tool definition with
+`strict: true`. The bare-JSON instruction is inert here — every one of the 100
+recorded runs returned `stop_reason: tool_use` and a schema-valid object — but
+it is roughly 130 tokens, 6.5% of the prompt, telling the model to do something
+the API prevents.
+
+**We are not fixing it, on purpose.** The prompt is the instrument that produced
+the results in `results/`, and publishing the exact text that was run is the
+point. Its `prompt_sha` (`c1572450`) appears in all 100 run records; editing one
+character would break that chain and leave the repo showing a prompt that never
+produced these numbers. The same argument applies to `code/03`: adding
+`strict: true` would tighten generation, which means the runner would no longer
+be the one that made `runs/`. Both stay as they were run.
+
+The transparency you get is a faithful record. The cost is that the record is
+dated. So when you write your own codebook:
+
+- **Describe the mechanism your runner actually uses**, and check it against
+  current API documentation rather than copying this header.
+- **Drop the "respond with JSON only" section** if you constrain output through
+  the API. It is dead weight when the API already guarantees the shape.
+- **Consider `strict: true`** on the tool definition. This schema already has
+  `additionalProperties: false` and a `required` array, so it is strict-ready.
+- **Check your model supports forced tool use.** `tool_choice: {"type": "tool"}`
+  is rejected on the newest Claude models; see `experiments/README.md`.
+
+Treat the frozen prompt as evidence of what was done, not as a template to copy
+verbatim.
 
 ## Checklist
 
